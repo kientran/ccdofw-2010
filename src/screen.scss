@@ -1,0 +1,262 @@
+@import "blueprint/reset";
+@import "compass/css3/gradient";
+@import "compass/css3/box-shadow";
+@import "compass/css3/border-radius";
+@import "compass/reset/utilities";
+@import "partials/base";
+@import "blueprint";
+@import "blueprint/scaffolding";
+//Recommended Blueprint configuration with scoping and semantic layout:
+@include blueprint-scaffolding("body.bp");
+
+
+$ccblue: #003975;
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+body.bp {
+  // @include blueprint-typography(true);
+  // @include blueprint-utilities;
+  // @include blueprint-debug;
+  // @include blueprint-interaction;
+}
+
+form.bp {
+  @include blueprint-form; }
+
+body.two-col {
+  #container {
+    @include container; }
+  header, footer {
+    @include column($blueprint_grid_columns); }
+  #sidebar {
+    $sidebar_columns: floor($blueprint_grid_columns / 3);
+    @include column($sidebar_columns - 2, true); 
+    @include prepend(2);
+  }
+  #content {
+    $content_columns: ceil(2 * $blueprint_grid_columns / 3 - 1);
+    @include column($content_columns - 2);
+    @include prepend(1);
+    @include append(1);
+   } 
+}
+
+body {
+  height: 100%;
+  @include linear-gradient(color-stops(#b8ae96, #d4cdbd));
+  background-repeat: no-repeat;
+  background: #d4cdbd;
+  font-family: "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+  font-size: 10pt;
+  a {
+    text-decoration: none;
+    color: $ccblue;
+  }
+  p {
+    line-height: 1.4em;
+  }
+}
+
+.awesome {
+  background: #222;
+  display: inline-block;
+  padding: 5px 10px 6px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 1;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+  border-bottom: 1px solid rgba(0,0,0,0.25);
+
+  position: relative;
+  cursor: pointer;
+} 
+
+.green.awesome {
+  background-color: green;
+}
+.green.awesome:hover {
+  background-color: green + #222;
+}
+
+.blue.awesome {
+  background-color: $ccblue;
+}
+.blue.awesome:hover {
+  background-color: $ccblue + #222;
+}
+
+div#container {
+  background: white;
+  @include box-shadow;
+  @include border-radius;
+}
+header {
+  div#searchbar {
+   text-align: right;
+    font-size: 0.7em;
+    @include linear-gradient(color-stops($ccblue, $ccblue - #022 ));
+    height: 30px;
+  }
+  div#logobar {
+    //@include linear-gradient(color-stops($ccblue, $ccblue - #022 ));
+    height: 150px;
+    color: white;
+    a {
+      display: block;
+      margin: 1em auto;
+      height: 150px;
+      width: 390px;
+      text-indent: -9999px;
+      background-image: url(../images/cclogo.png);
+    }  
+  }
+  navigation {
+    font-size: 1.2em;
+    @include append(1);
+    @include prepend(1);
+    @include column(22);
+    a {
+      color: black;
+    }
+    a:hover {
+      color: $ccblue;
+    }
+    ul {
+      list-style: none;
+      border-bottom: 4px solid black;
+      padding: 0px;
+    }
+
+    li {
+      float: left;
+      position: relative;
+      margin-bottom: -4px;
+      margin-left: 10px;
+      margin-right: 10px;
+      border-bottom: 4px solid black;
+    }
+
+    li a {
+      margin-bottom: -4px;
+      padding-bottom: 10px;
+      display: block;
+    }
+
+    ul .first {
+      margin-left: 0px;
+    }
+
+    ul .current {
+      border-color: $ccblue;
+    }
+
+    ul .current a, ul .current a:hover {
+      border-left: 4px solid white;
+      border-right: 4px solid white;
+    }
+
+    div#nav_donate {
+      float:right;
+      margin-top: 5px;
+    }
+  
+  }
+}
+
+.boxgrid {
+  width: 540px;
+  height: 175px;
+  margin: 0px;
+  margin-bottom: 10px;
+  background: white;
+  border: solid 1px black;
+  overflow: hidden;
+  position: relative;
+  @include box-shadow;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+  }
+  p {
+    padding: 0 10px;
+    color: #afafaf;
+    font-weight: bold;
+    font: 10pt;
+    margin: 1em;
+  }
+  h3 {
+    color: #afafaf;
+    margin: 0.25em 1em;
+  }
+}
+
+.boxcaption {
+  float: left;
+  position: absolute;
+  background: #000;
+  height: 100px;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.caption .boxcaption {
+  top: 150px;
+  left: 0;
+}
+
+div#front_action {
+  a {
+    text-align: center;
+    font-size: 2.5em;
+    width: 210px;
+    margin-bottom: 1em;
+  }
+}
+
+footer {
+  table {
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    color: #ccc;
+  }
+  a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  margin-top: 2em;
+  border-top: 1px solid black;
+  @include linear-gradient(color-stops($ccblue, $ccblue - #022 ));
+  //background: #b8ae96;
+  font-size: 0.8em;
+  table tr td {
+    vertical-align: top;
+  }
+  li {
+    list-style: none;
+  }
+  li.footer_head {
+    font-weight: bold;
+    color: #ccc;
+    margin-bottom: 1em;
+  }
+}
