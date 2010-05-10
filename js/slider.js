@@ -4,6 +4,6 @@ $(document).ready(function() {
     $('.boxgrid.caption').hover(function(){
       $(".cover", this).stop().animate({top:'75px'},{queue:false,duration:160});
       }, function() {
-      $(".cover", this).stop().animate({top:'125px'},{queue:false,duration:160});
+      $(".cover", this).stop().animate({top:'140px'},{queue:false,duration:160});
     });
 });

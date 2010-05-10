@@ -8,6 +8,8 @@
 
 $ccblue: #003975;
 
+@include global-reset;
+
 .clearfix:after {
 	visibility: hidden;
 	display: block;
@@ -19,6 +21,7 @@ $ccblue: #003975;
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
+
 form.bp {
   @include blueprint-form; }
 
@@ -28,14 +31,13 @@ body.two-col {
   header, footer {
     @include column($blueprint_grid_columns); }
   #sidebar {
-    $sidebar_columns: floor($blueprint_grid_columns / 3);
-    @include column($sidebar_columns - 1, true); 
-    @include prepend(1);
+    $sidebar_columns: 5;
+    @include column($sidebar_columns, true); 
   }
   #content {
-    $content_columns: ceil(2 * $blueprint_grid_columns / 3 - 1);
-    @include column($content_columns - 1);
-    @include prepend(1);
+    $content_columns: 15;
+    @include column($content_columns);
+    @include prepend(2);
    } 
 }
 
@@ -96,29 +98,38 @@ div#container {
 }
 header {
   div#searchbar {
-   text-align: right;
+    text-align: right;
     font-size: 0.7em;
     @include linear-gradient(color-stops($ccblue, $ccblue - #022 ));
     height: 30px;
+    padding-top: 5px;
+    @include append(2);
+    color: #ccc;
+    a {
+      color: #ccc;
+    }
+    input {
+      margin-left: 10px;
+    }
   }
   div#logobar {
     //@include linear-gradient(color-stops($ccblue, $ccblue - #022 ));
-    height: 150px;
+    height: 125px;
     color: white;
     a {
       display: block;
       margin: 1em auto;
-      height: 150px;
-      width: 390px;
+      height: 125px;
+      width: 325px;
       text-indent: -9999px;
       background-image: url(../images/cclogo.png);
     }  
   }
   navigation {
     font-size: 1.2em;
-    @include append(1);
-    @include prepend(1);
-    @include column(22);
+    @include append(2);
+    @include prepend(2);
+    @include column(20);
     a {
       color: black;
     }
@@ -128,7 +139,7 @@ header {
     ul {
       list-style: none;
       border-bottom: 4px solid black;
-      padding: 0px;
+      margin: 1em 0;
     }
 
     li {
@@ -168,7 +179,7 @@ header {
 }
 
 .boxgrid {
-  width: 540px;
+  width: 588px;
   height: 175px;
   margin: 0px;
   margin-bottom: 10px;
@@ -192,7 +203,7 @@ header {
   }
   h3 {
     color: #afafaf;
-    font-size: 2em;
+    font-size: 1.7em;
     margin: 0.25em 1em;
   }
 }
@@ -200,23 +211,43 @@ header {
 .boxcaption {
   float: left;
   position: absolute;
-  background: #000;
+  background: $ccblue;
   height: 100px;
   width: 100%;
   opacity: 0.8;
 }
 
 .caption .boxcaption {
-  top: 125px;
+  top: 140px;
   left: 0;
 }
 
 div#front_action {
   a {
     text-align: center;
-    font-size: 2.5em;
-    width: 250px;
+    font-size: 2em;
+    width: 170px;
     margin-bottom: 1em;
+  }
+}
+
+div#lower_front {
+  div {
+    @include border-radius;
+    background: grey;
+    display: block;
+    height: 250px;
+  }
+  div#lower_front_left {
+    @include column(5)
+  }
+  div#lower_front_center {
+
+    @include column(5)
+  }
+  div#lower_front_right {
+
+    @include column(5, true)
   }
 }
 
@@ -238,6 +269,13 @@ footer {
   @include linear-gradient(color-stops($ccblue, $ccblue - #022 ));
   //background: #b8ae96;
   font-size: 0.8em;
+  line-height: 1.5em;
+  table {
+    @include prepend(2);
+    @include append(2);
+    width: 100%;
+    margin-top: 2em;
+  }
   table tr td {
     vertical-align: top;
   }
