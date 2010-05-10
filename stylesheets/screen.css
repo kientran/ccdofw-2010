@@ -320,10 +320,11 @@ header navigation div#nav_donate {
 /* line 193, ../src/screen.scss */
 .boxgrid h3 {
   color: #afafaf;
+  font-size: 2em;
   margin: 0.25em 1em;
 }
 
-/* line 199, ../src/screen.scss */
+/* line 200, ../src/screen.scss */
 .boxcaption {
   float: left;
   position: absolute;
@@ -333,13 +334,13 @@ header navigation div#nav_donate {
   opacity: 0.8;
 }
 
-/* line 208, ../src/screen.scss */
+/* line 209, ../src/screen.scss */
 .caption .boxcaption {
-  top: 150px;
+  top: 125px;
   left: 0;
 }
 
-/* line 214, ../src/screen.scss */
+/* line 215, ../src/screen.scss */
 div#front_action a {
   text-align: center;
   font-size: 2.5em;
@@ -347,7 +348,7 @@ div#front_action a {
   margin-bottom: 1em;
 }
 
-/* line 222, ../src/screen.scss */
+/* line 223, ../src/screen.scss */
 footer {
   color: #ccc;
   margin-top: 2em;
@@ -356,39 +357,39 @@ footer {
   background-image: -moz-linear-gradient(top, #003975 0%, #001753 100%);
   font-size: 0.8em;
 }
-/* line 224, ../src/screen.scss */
+/* line 225, ../src/screen.scss */
 footer table {
   padding: 0;
   margin: 0;
 }
-/* line 228, ../src/screen.scss */
+/* line 229, ../src/screen.scss */
 footer a {
   color: #ccc;
 }
-/* line 231, ../src/screen.scss */
+/* line 232, ../src/screen.scss */
 footer a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 240, ../src/screen.scss */
+/* line 241, ../src/screen.scss */
 footer table tr td {
   vertical-align: top;
 }
-/* line 243, ../src/screen.scss */
+/* line 244, ../src/screen.scss */
 footer li {
   list-style: none;
 }
-/* line 246, ../src/screen.scss */
+/* line 247, ../src/screen.scss */
 footer .footer_head {
   font-weight: bold;
   color: #ccc;
   margin-bottom: 1em;
 }
-/* line 252, ../src/screen.scss */
+/* line 253, ../src/screen.scss */
 footer #footer_address p {
   margin-left: 30px;
 }
-/* line 256, ../src/screen.scss */
+/* line 257, ../src/screen.scss */
 footer #copyright {
   text-align: center;
   padding: 1em;
