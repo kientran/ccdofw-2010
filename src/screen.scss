@@ -29,14 +29,13 @@ body.two-col {
     @include column($blueprint_grid_columns); }
   #sidebar {
     $sidebar_columns: floor($blueprint_grid_columns / 3);
-    @include column($sidebar_columns - 2, true); 
-    @include prepend(2);
+    @include column($sidebar_columns - 1, true); 
+    @include prepend(1);
   }
   #content {
     $content_columns: ceil(2 * $blueprint_grid_columns / 3 - 1);
-    @include column($content_columns - 2);
+    @include column($content_columns - 1);
     @include prepend(1);
-    @include append(1);
    } 
 }
 
@@ -215,7 +214,7 @@ div#front_action {
   a {
     text-align: center;
     font-size: 2.5em;
-    width: 210px;
+    width: 250px;
     margin-bottom: 1em;
   }
 }
