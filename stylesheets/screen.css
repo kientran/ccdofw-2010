@@ -380,7 +380,7 @@ footer li {
   list-style: none;
 }
 /* line 247, ../src/screen.scss */
-footer li.footer_head {
+footer .footer_head {
   font-weight: bold;
   color: #ccc;
   margin-bottom: 1em;
