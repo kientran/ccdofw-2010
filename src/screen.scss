@@ -1,14 +1,10 @@
-@import "blueprint/reset";
 @import "compass/css3/gradient";
 @import "compass/css3/box-shadow";
 @import "compass/css3/border-radius";
 @import "compass/reset/utilities";
 @import "partials/base";
 @import "blueprint";
-@import "blueprint/scaffolding";
 //Recommended Blueprint configuration with scoping and semantic layout:
-@include blueprint-scaffolding("body.bp");
-
 
 $ccblue: #003975;
 
@@ -22,13 +18,6 @@ $ccblue: #003975;
 	}
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
-
-body.bp {
-  // @include blueprint-typography(true);
-  // @include blueprint-utilities;
-  // @include blueprint-debug;
-  // @include blueprint-interaction;
-}
 
 form.bp {
   @include blueprint-form; }
@@ -232,6 +221,7 @@ div#front_action {
 }
 
 footer {
+  color: #ccc;
   table {
     padding: 0;
     margin: 0;
@@ -259,4 +249,14 @@ footer {
     color: #ccc;
     margin-bottom: 1em;
   }
-}
+  #footer_address {
+    p {
+      margin-left: 30px;
+    }
+  }
+  #copyright {
+    text-align: center;
+    padding: 1em;
+  }
+}  
+
