@@ -43,17 +43,23 @@ body.two-col {
 
 body {
   height: 100%;
-  @include linear-gradient(color-stops(#b8ae96, #d4cdbd));
-  background-repeat: no-repeat;
   background: #d4cdbd;
+  @include linear-gradient(color-stops(#b8ae96, #d4cdbd));
+  margin: 10px 0;
+  background-repeat: no-repeat;
   font-family: "Helvetica Neue", "Arial", "Helvetica", sans-serif;
   font-size: 10pt;
   a {
     text-decoration: none;
+    font-weight: bold;
     color: $ccblue;
+  }
+  a:hover {
+    text-decoration: underline;
   }
   p {
     line-height: 1.4em;
+    margin: 1em 0;
   }
 }
 
@@ -92,9 +98,11 @@ body {
 }
 
 div#container {
-  background: white;
   @include box-shadow;
   @include border-radius;
+  background: white url(../images/buildingcharcol.jpg) no-repeat;
+  background-position: 0% 90%;
+
 }
 header {
   div#searchbar {
@@ -196,13 +204,12 @@ header {
   }
   p {
     padding: 0 10px;
-    color: #afafaf;
-    font-weight: bold;
+    color: white;
     font: 10pt;
     margin: 1em;
   }
   h3 {
-    color: #afafaf;
+    color: white;
     font-size: 1.7em;
     margin: 0.25em 1em;
   }
@@ -214,13 +221,14 @@ header {
   background: $ccblue;
   height: 100px;
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .caption .boxcaption {
   top: 140px;
   left: 0;
 }
+
 
 div#front_action {
   a {
@@ -232,22 +240,45 @@ div#front_action {
 }
 
 div#lower_front {
+  @include column(15);
   div {
     @include border-radius;
-    background: grey;
+    @include box-shadow;
+    border: 1px solid black;
+    background: white ;
     display: block;
-    height: 250px;
+    padding: 1em;
+    margin: 1em 0;
   }
-  div#lower_front_left {
-    @include column(5)
+  div#lower_front_top{
+    float: left;
   }
-  div#lower_front_center {
+  div#lower_front_bottom {
+    float: left;
+  }
+  h2 {
+    font-size: 1.5em;
+    color: $ccblue;
+    margin-bottom: 1em;
+  }
+  ul li {
+    margin-bottom: 1em;
+  }
+}
 
-    @include column(5)
-  }
-  div#lower_front_right {
 
-    @include column(5, true)
+div#sidebar {
+  div#heathers_box {
+    div#heathers_text {
+      @include border-radius;
+      @include box-shadow;
+      border: 1px solid black;
+      background: white;
+    }
+    p {
+      margin: 0px;
+      padding: 1em;
+    }
   }
 }
 
@@ -259,6 +290,7 @@ footer {
   }
   a {
     color: #ccc;
+    font-weight: normal;
   }
   a:hover {
     color: white;
