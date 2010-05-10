@@ -21,15 +21,17 @@ $ccblue: #003975;
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
+body.two-col, body.three-col {
+  #container {
+    @include container; }
+  header, footer {
+    @include column($blueprint_grid_columns); }
+}
 
 form.bp {
   @include blueprint-form; }
 
 body.two-col {
-  #container {
-    @include container; }
-  header, footer {
-    @include column($blueprint_grid_columns); }
   #sidebar {
     $sidebar_columns: 5;
     @include column($sidebar_columns, true); 
@@ -39,6 +41,22 @@ body.two-col {
     @include column($content_columns);
     @include prepend(2);
    } 
+}
+
+body.three-col {
+  #left_sidebar {
+    $sidebar_columns: 5;
+    @include column($sidebar_columns); 
+    @include prepend(2);
+  }
+  #sidebar {
+    $sidebar_columns: 5;
+    @include column($sidebar_columns, true); 
+  }
+  #content {
+    $content_columns: 10;
+    @include column($content_columns);
+  } 
 }
 
 body {
@@ -266,6 +284,33 @@ div#lower_front {
   }
 }
 
+div#left_sidebar {
+  div#side_navigation {
+    @include border-radius;
+    @include box-shadow;    
+    padding: 1em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+}
+
+div#content_container {
+  background: white;
+  @include border-radius;
+  @include box-shadow;
+  padding: 1em;
+  h1 {
+    font-size: 2em;
+    margin: 0 0 1em 0;
+  }
+  h2 {
+    font-size: 1.5em;
+    margin: 0 0 1em 0;
+  }
+}
 
 div#sidebar {
   div#heathers_box {
