@@ -4,12 +4,18 @@
 
   <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/superfish.css" media="screen">
   <!--[if lt IE 8]>
       <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
 
   <script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.1.js"></script>
+
+	<script type="text/javascript" src="js/hoverIntent.js"></script>
+	<script type="text/javascript" src="js/superfish.js"></script>
+	<script type="text/javascript" src="js/supersubs.js"></script>
   <script type="text/javascript" src='js/slider.js'></script>
+
 </head>
 
 <body class="bp two-col">
@@ -22,28 +28,29 @@
   <div id="logobar"><a href="">Catholic Charities</a></div>
   <navigation>
     <!--<div id="nav_donate"><a href="" class="green awesome">Donate now</a></div> -->
-    <ul id="nav" class="clearfix">
+    <div id='nav_container'>
+    <ul id="nav" class="clearfix sf-menu">
       <li id="nav_home" class="current first"><a href="">Home</a></li>
       <li id="nav_about" class="dir"><a href="">About Us</a>
-<!--        <ul>
+        <ul>
           <li><a href="">Frequent Questions</a></li>
           <li><a href="">Board of Directors</a></li>
           <li><a href="">Core Values</a></li>
           <li><a href="">Contact Information</a></li>
           <li><a href="">Employment</a></li>
-        </ul> -->
+        </ul>
       </li>
       <li id="nav_media" class="dir"><a href="">Media</a>
-  <!--      <ul>
+      <ul>
           <li><a href="">News and Information</a></li>
           <li><a href="">Photos</a></li>
           <li><a href="">Video</a></li>
           <li><a href="">Publications</a></li>
           <li><a href="">Newsletter</a></li>
-        </ul> --> 
+        </ul> 
       </li>
       <li id="nav_programs" class="dir"><a href="">Programs</a>
-  <!--      <ul>
+      <ul>
           <li class="dir"><a href="">Business Venture Services</a>
             <ul>
               <li><a href="">Translation and Interpreter Network</a></li>
@@ -96,17 +103,18 @@
               <li><a href="">Nuestro Hogar, Inc.</a></li>
             </ul>
           </li>
-        </ul>-->
+        </ul>
       </li>
       <li id="nav_involved" class="dir"><a href="">Get Involved</a>
-<!--        <ul>
+        <ul>
           <li><a href="">Service Opportunities</a></li>
           <li><a href="">In Kind Needs</a></li>
           <li><a href="">Volunteer Center</a></li>
           <li><a href="">Donate Now</a></li>
-        </ul>-->
+        </ul>
       </li>
     </ul>
+  </div>
   </navigation>
 </header>
 

@@ -152,6 +152,17 @@ header {
     }  
   }
   navigation {
+    @include append(2);
+    @include prepend(2);
+    @include column(20);
+    margin: 2em 0;
+    div#nav_container {
+      height: 34px;
+      border-bottom: 4px solid black;
+    }
+}
+/*
+  navigation {
     font-size: 1.2em;
     @include append(2);
     @include prepend(2);
@@ -201,7 +212,7 @@ header {
       margin-top: 5px;
     }
   
-  }
+  } */
 }
 
 .boxgrid {

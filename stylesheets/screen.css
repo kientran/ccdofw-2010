@@ -306,6 +306,61 @@ div#container {
   background-position: 0% 90%;
 }
 
+/* line 125, ../src/screen.scss */
+header {
+  /*
+    navigation {
+      font-size: 1.2em;
+      @include append(2);
+      @include prepend(2);
+      @include column(20);
+      a {
+        color: black;
+      }
+      a:hover {
+        color: $ccblue;
+      }
+      ul {
+        list-style: none;
+        border-bottom: 4px solid black;
+        margin: 1em 0;
+      }
+  
+      li {
+        float: left;
+        position: relative;
+        margin-bottom: -4px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-bottom: 4px solid black;
+      }
+  
+      li a {
+        margin-bottom: -4px;
+        padding-bottom: 10px;
+        display: block;
+      }
+  
+      ul .first {
+        margin-left: 0px;
+      }
+  
+      ul .current {
+        border-color: $ccblue;
+      }
+  
+      ul .current a, ul .current a:hover {
+        border-left: 4px solid white;
+        border-right: 4px solid white;
+      }
+  
+      div#nav_donate {
+        float:right;
+        margin-top: 5px;
+      }
+    
+    } */
+}
 /* line 126, ../src/screen.scss */
 header div#searchbar {
   text-align: right;
@@ -341,67 +396,25 @@ header div#logobar a {
 }
 /* line 154, ../src/screen.scss */
 header navigation {
-  font-size: 1.2em;
   padding-right: 80px;
   padding-left: 80px;
   display: inline;
   float: left;
   margin-right: 10px;
   width: 790px;
+  margin: 2em 0;
 }
 /* line 138, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html header navigation {
   overflow-x: hidden;
 }
 /* line 159, ../src/screen.scss */
-header navigation a {
-  color: black;
-}
-/* line 162, ../src/screen.scss */
-header navigation a:hover {
-  color: #003975;
-}
-/* line 165, ../src/screen.scss */
-header navigation ul {
-  list-style: none;
+header navigation div#nav_container {
+  height: 34px;
   border-bottom: 4px solid black;
-  margin: 1em 0;
-}
-/* line 171, ../src/screen.scss */
-header navigation li {
-  float: left;
-  position: relative;
-  margin-bottom: -4px;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-bottom: 4px solid black;
-}
-/* line 180, ../src/screen.scss */
-header navigation li a {
-  margin-bottom: -4px;
-  padding-bottom: 10px;
-  display: block;
-}
-/* line 186, ../src/screen.scss */
-header navigation ul .first {
-  margin-left: 0px;
-}
-/* line 190, ../src/screen.scss */
-header navigation ul .current {
-  border-color: #003975;
-}
-/* line 194, ../src/screen.scss */
-header navigation ul .current a, header navigation ul .current a:hover {
-  border-left: 4px solid white;
-  border-right: 4px solid white;
-}
-/* line 199, ../src/screen.scss */
-header navigation div#nav_donate {
-  float: right;
-  margin-top: 5px;
 }
 
-/* line 207, ../src/screen.scss */
+/* line 218, ../src/screen.scss */
 .boxgrid {
   width: 588px;
   height: 175px;
@@ -416,28 +429,28 @@ header navigation div#nav_donate {
   -o-box-shadow: #333333 1px 1px 5px;
   box-shadow: #333333 1px 1px 5px;
 }
-/* line 217, ../src/screen.scss */
+/* line 228, ../src/screen.scss */
 .boxgrid img {
   position: absolute;
   top: 0;
   left: 0;
   border: 0;
 }
-/* line 223, ../src/screen.scss */
+/* line 234, ../src/screen.scss */
 .boxgrid p {
   padding: 0 10px;
   color: white;
   font: 10pt;
   margin: 1em;
 }
-/* line 229, ../src/screen.scss */
+/* line 240, ../src/screen.scss */
 .boxgrid h3 {
   color: white;
   font-size: 1.7em;
   margin: 0.25em 1em;
 }
 
-/* line 236, ../src/screen.scss */
+/* line 247, ../src/screen.scss */
 .boxcaption {
   float: left;
   position: absolute;
@@ -447,13 +460,13 @@ header navigation div#nav_donate {
   opacity: 0.9;
 }
 
-/* line 245, ../src/screen.scss */
+/* line 256, ../src/screen.scss */
 .caption .boxcaption {
   top: 140px;
   left: 0;
 }
 
-/* line 252, ../src/screen.scss */
+/* line 263, ../src/screen.scss */
 div#front_action a {
   text-align: center;
   font-size: 2em;
@@ -461,7 +474,7 @@ div#front_action a {
   margin-bottom: 1em;
 }
 
-/* line 260, ../src/screen.scss */
+/* line 271, ../src/screen.scss */
 div#lower_front {
   display: inline;
   float: left;
@@ -472,7 +485,7 @@ div#lower_front {
 * html div#lower_front {
   overflow-x: hidden;
 }
-/* line 262, ../src/screen.scss */
+/* line 273, ../src/screen.scss */
 div#lower_front div {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -490,26 +503,26 @@ div#lower_front div {
   padding: 1em;
   margin: 1em 0;
 }
-/* line 271, ../src/screen.scss */
+/* line 282, ../src/screen.scss */
 div#lower_front div#lower_front_top {
   float: left;
 }
-/* line 274, ../src/screen.scss */
+/* line 285, ../src/screen.scss */
 div#lower_front div#lower_front_bottom {
   float: left;
 }
-/* line 277, ../src/screen.scss */
+/* line 288, ../src/screen.scss */
 div#lower_front h2 {
   font-size: 1.5em;
   color: #003975;
   margin-bottom: 1em;
 }
-/* line 282, ../src/screen.scss */
+/* line 293, ../src/screen.scss */
 div#lower_front ul li {
   margin-bottom: 1em;
 }
 
-/* line 288, ../src/screen.scss */
+/* line 299, ../src/screen.scss */
 div#left_sidebar div#side_navigation {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -523,13 +536,13 @@ div#left_sidebar div#side_navigation {
   box-shadow: #333333 1px 1px 5px;
   padding: 1em;
 }
-/* line 294, ../src/screen.scss */
+/* line 305, ../src/screen.scss */
 div#left_sidebar h3 {
   font-size: 1.2em;
   margin-bottom: 1em;
 }
 
-/* line 300, ../src/screen.scss */
+/* line 311, ../src/screen.scss */
 div#content_container {
   background: white;
   -moz-border-radius: 5px;
@@ -544,18 +557,18 @@ div#content_container {
   box-shadow: #333333 1px 1px 5px;
   padding: 1em;
 }
-/* line 305, ../src/screen.scss */
+/* line 316, ../src/screen.scss */
 div#content_container h1 {
   font-size: 2em;
   margin: 0 0 1em 0;
 }
-/* line 309, ../src/screen.scss */
+/* line 320, ../src/screen.scss */
 div#content_container h2 {
   font-size: 1.5em;
   margin: 0 0 1em 0;
 }
 
-/* line 317, ../src/screen.scss */
+/* line 328, ../src/screen.scss */
 div#sidebar div#heathers_box div#heathers_text {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -570,13 +583,13 @@ div#sidebar div#heathers_box div#heathers_text {
   border: 1px solid black;
   background: white;
 }
-/* line 323, ../src/screen.scss */
+/* line 334, ../src/screen.scss */
 div#sidebar div#heathers_box p {
   margin: 0px;
   padding: 1em;
 }
 
-/* line 330, ../src/screen.scss */
+/* line 341, ../src/screen.scss */
 footer {
   color: #ccc;
   margin-top: 2em;
@@ -586,47 +599,47 @@ footer {
   font-size: 0.8em;
   line-height: 1.5em;
 }
-/* line 332, ../src/screen.scss */
+/* line 343, ../src/screen.scss */
 footer table {
   padding: 0;
   margin: 0;
 }
-/* line 336, ../src/screen.scss */
+/* line 347, ../src/screen.scss */
 footer a {
   color: #ccc;
   font-weight: normal;
 }
-/* line 340, ../src/screen.scss */
+/* line 351, ../src/screen.scss */
 footer a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 350, ../src/screen.scss */
+/* line 361, ../src/screen.scss */
 footer table {
   padding-left: 80px;
   padding-right: 80px;
   width: 100%;
   margin-top: 2em;
 }
-/* line 356, ../src/screen.scss */
+/* line 367, ../src/screen.scss */
 footer table tr td {
   vertical-align: top;
 }
-/* line 359, ../src/screen.scss */
+/* line 370, ../src/screen.scss */
 footer li {
   list-style: none;
 }
-/* line 362, ../src/screen.scss */
+/* line 373, ../src/screen.scss */
 footer .footer_head {
   font-weight: bold;
   color: #ccc;
   margin-bottom: 1em;
 }
-/* line 368, ../src/screen.scss */
+/* line 379, ../src/screen.scss */
 footer #footer_address p {
   margin-left: 30px;
 }
-/* line 372, ../src/screen.scss */
+/* line 383, ../src/screen.scss */
 footer #copyright {
   text-align: center;
   padding: 1em;
