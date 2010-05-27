@@ -14,4 +14,8 @@ $(document).ready(function() {
       }).superfish();  // call supersubs first, then superfish, so that subs are 
                       // not display:none when measuring. Call before initialising 
                       // containing tabs for same reason. 
+    $("#upper_front").cycle({
+      fx: 'scrollRight',
+      delay: -5000
+    });
 });
