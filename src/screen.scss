@@ -172,8 +172,15 @@ header {
 }
 
 
-div#content, div#sidebar {
+div#featured_stories, div#sidebar {
   margin-top: 1em;
+}
+
+div#featured_stories {
+  @include append(2);
+  @include prepend(2);
+  @include column(20);
+
 }
 div#upper_front {
   overflow: hidden;
@@ -185,8 +192,8 @@ div#upper_front {
 }
 
 .boxgrid {
-  width: 590px;
-  height: 385px;
+  @include column(20);
+  height: 525px;
   margin: 0px;
   margin-bottom: 10px;
   background: white;
@@ -254,15 +261,16 @@ div#lower_front {
   div#lower_front_bottom {
     float: left;
   }
-  h2 {
+    ul li {
+    margin-bottom: 1em;
+  }
+}
+
+h2 {
     font-size: 1.5em;
     color: $ccblue;
     margin-bottom: 1em;
   }
-  ul li {
-    margin-bottom: 1em;
-  }
-}
 
 div#left_sidebar {
   div#side_navigation {
@@ -299,12 +307,7 @@ div#sidebar {
       @include box-shadow;
       border: 1px solid black;
       background: white;
-    div#heathers_text {
-    }
-    p {
-      margin: 0px;
       padding: 1em;
-    }
   }
 }
 

@@ -365,11 +365,25 @@ header navigation div#nav_donate {
 }
 
 /* line 175, ../src/screen.scss */
-div#content, div#sidebar {
+div#featured_stories, div#sidebar {
   margin-top: 1em;
 }
 
-/* line 178, ../src/screen.scss */
+/* line 179, ../src/screen.scss */
+div#featured_stories {
+  padding-right: 80px;
+  padding-left: 80px;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 790px;
+}
+/* line 138, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html div#featured_stories {
+  overflow-x: hidden;
+}
+
+/* line 185, ../src/screen.scss */
 div#upper_front {
   overflow: hidden;
   -moz-border-radius: 5px;
@@ -379,16 +393,19 @@ div#upper_front {
   -khtml-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 181, ../src/screen.scss */
+/* line 188, ../src/screen.scss */
 div#upper_front .readstory {
   float: right;
   margin-right: 10px;
 }
 
-/* line 187, ../src/screen.scss */
+/* line 194, ../src/screen.scss */
 .boxgrid {
-  width: 590px;
-  height: 385px;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 790px;
+  height: 525px;
   margin: 0px;
   margin-bottom: 10px;
   background: white;
@@ -400,28 +417,32 @@ div#upper_front .readstory {
   -o-box-shadow: #333333 1px 1px 5px;
   box-shadow: #333333 1px 1px 5px;
 }
-/* line 197, ../src/screen.scss */
+/* line 138, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .boxgrid {
+  overflow-x: hidden;
+}
+/* line 204, ../src/screen.scss */
 .boxgrid img {
   position: absolute;
   top: 0;
   left: 0;
   border: 0;
 }
-/* line 203, ../src/screen.scss */
+/* line 210, ../src/screen.scss */
 .boxgrid p {
   padding: 0 10px;
   color: white;
   font: 10pt;
   margin: 1em;
 }
-/* line 209, ../src/screen.scss */
+/* line 216, ../src/screen.scss */
 .boxgrid h3 {
   color: white;
   font-size: 1.7em;
   margin: 0.25em 1em;
 }
 
-/* line 216, ../src/screen.scss */
+/* line 223, ../src/screen.scss */
 .boxcaption {
   float: left;
   position: absolute;
@@ -431,13 +452,13 @@ div#upper_front .readstory {
   opacity: 0.9;
 }
 
-/* line 225, ../src/screen.scss */
+/* line 232, ../src/screen.scss */
 .caption .boxcaption {
   bottom: 0px;
   left: 0;
 }
 
-/* line 232, ../src/screen.scss */
+/* line 239, ../src/screen.scss */
 div#front_action a {
   text-align: center;
   font-size: 2em;
@@ -445,7 +466,7 @@ div#front_action a {
   margin-bottom: 1em;
 }
 
-/* line 240, ../src/screen.scss */
+/* line 247, ../src/screen.scss */
 div#lower_front {
   display: inline;
   float: left;
@@ -456,7 +477,7 @@ div#lower_front {
 * html div#lower_front {
   overflow-x: hidden;
 }
-/* line 242, ../src/screen.scss */
+/* line 249, ../src/screen.scss */
 div#lower_front div {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -474,26 +495,27 @@ div#lower_front div {
   padding: 1em;
   margin: 1em 0;
 }
-/* line 251, ../src/screen.scss */
+/* line 258, ../src/screen.scss */
 div#lower_front div#lower_front_top {
   float: left;
 }
-/* line 254, ../src/screen.scss */
+/* line 261, ../src/screen.scss */
 div#lower_front div#lower_front_bottom {
   float: left;
 }
-/* line 257, ../src/screen.scss */
-div#lower_front h2 {
-  font-size: 1.5em;
-  color: #003975;
-  margin-bottom: 1em;
-}
-/* line 262, ../src/screen.scss */
+/* line 264, ../src/screen.scss */
 div#lower_front ul li {
   margin-bottom: 1em;
 }
 
-/* line 268, ../src/screen.scss */
+/* line 269, ../src/screen.scss */
+h2 {
+  font-size: 1.5em;
+  color: #003975;
+  margin-bottom: 1em;
+}
+
+/* line 276, ../src/screen.scss */
 div#left_sidebar div#side_navigation {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -507,13 +529,13 @@ div#left_sidebar div#side_navigation {
   box-shadow: #333333 1px 1px 5px;
   padding: 1em;
 }
-/* line 274, ../src/screen.scss */
+/* line 282, ../src/screen.scss */
 div#left_sidebar h3 {
   font-size: 1.2em;
   margin-bottom: 1em;
 }
 
-/* line 280, ../src/screen.scss */
+/* line 288, ../src/screen.scss */
 div#content_container {
   background: white;
   -moz-border-radius: 5px;
@@ -528,18 +550,18 @@ div#content_container {
   box-shadow: #333333 1px 1px 5px;
   padding: 1em;
 }
-/* line 285, ../src/screen.scss */
+/* line 293, ../src/screen.scss */
 div#content_container h1 {
   font-size: 2em;
   margin: 0 0 1em 0;
 }
-/* line 289, ../src/screen.scss */
+/* line 297, ../src/screen.scss */
 div#content_container h2 {
   font-size: 1.5em;
   margin: 0 0 1em 0;
 }
 
-/* line 296, ../src/screen.scss */
+/* line 304, ../src/screen.scss */
 div#sidebar div#heathers_box {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -554,14 +576,10 @@ div#sidebar div#heathers_box {
   box-shadow: #333333 1px 1px 5px;
   border: 1px solid black;
   background: white;
-}
-/* line 304, ../src/screen.scss */
-div#sidebar div#heathers_box p {
-  margin: 0px;
   padding: 1em;
 }
 
-/* line 311, ../src/screen.scss */
+/* line 314, ../src/screen.scss */
 footer {
   color: #ccc;
   margin-top: 2em;
@@ -571,47 +589,47 @@ footer {
   font-size: 0.8em;
   line-height: 1.5em;
 }
-/* line 313, ../src/screen.scss */
+/* line 316, ../src/screen.scss */
 footer table {
   padding: 0;
   margin: 0;
 }
-/* line 317, ../src/screen.scss */
+/* line 320, ../src/screen.scss */
 footer a {
   color: #ccc;
   font-weight: normal;
 }
-/* line 321, ../src/screen.scss */
+/* line 324, ../src/screen.scss */
 footer a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 331, ../src/screen.scss */
+/* line 334, ../src/screen.scss */
 footer table {
   padding-left: 80px;
   padding-right: 80px;
   width: 100%;
   margin-top: 2em;
 }
-/* line 337, ../src/screen.scss */
+/* line 340, ../src/screen.scss */
 footer table tr td {
   vertical-align: top;
 }
-/* line 340, ../src/screen.scss */
+/* line 343, ../src/screen.scss */
 footer li {
   list-style: none;
 }
-/* line 343, ../src/screen.scss */
+/* line 346, ../src/screen.scss */
 footer .footer_head {
   font-weight: bold;
   color: #ccc;
   margin-bottom: 1em;
 }
-/* line 349, ../src/screen.scss */
+/* line 352, ../src/screen.scss */
 footer #footer_address p {
   margin-left: 30px;
 }
-/* line 353, ../src/screen.scss */
+/* line 356, ../src/screen.scss */
 footer #copyright {
   text-align: center;
   padding: 1em;

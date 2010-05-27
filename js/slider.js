@@ -16,6 +16,6 @@ $(document).ready(function() {
                       // containing tabs for same reason. 
     $("#upper_front").cycle({
       fx: 'scrollRight',
-      delay: -5000
+      timeout: 7000
     });
 });
