@@ -58,32 +58,39 @@ ul.sf-menu li li li.sfHover ul {
 	float:			left;
 	margin-bottom:	1em;
 }
+
 .sf-menu a {
+/*
 	border-bottom:		1px solid #ccc;
   border-right: 1px solid #ccc;
+*/
 	padding: 		.75em 1em;
 	text-decoration:none;
 }
 
 .sf-menu .first a {
+/*
   border-left: 1px solid #ccc;
+*/
 }
 
 .sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
-	color:			black;
+	color:			white;
 }
+
 .sf-menu li {
-	background:		white;
+	/*background:		#003975;*/
 }
 .sf-menu li li {
-	background:		white;
+	background:		#003975;
 }
 .sf-menu li li li {
-	background:		white;
+	background:		#003975;
 }
+
 .sf-menu li:hover, .sf-menu li.sfHover,
 .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
-	background:		#003975;
+	background:		black;
 	outline:		0;
   color: white;
 }
@@ -106,7 +113,7 @@ ul.sf-menu li li li.sfHover ul {
 }
 a > .sf-sub-indicator {  /* give all except IE6 the correct values */
 	top:			.8em;
-	background-position: 0 -100px; /* use translucent arrow for modern browsers*/
+	background-position: -10px -100px; /* use translucent arrow for modern browsers*/
 }
 /* apply hovers to modern browsers */
 a:focus > .sf-sub-indicator,
@@ -119,7 +126,7 @@ li.sfHover > a > .sf-sub-indicator {
 
 /* point right for anchors in subs */
 .sf-menu ul .sf-sub-indicator { background-position:  -10px 0; }
-.sf-menu ul a > .sf-sub-indicator { background-position:  0 0; }
+.sf-menu ul a > .sf-sub-indicator { background-position:  -10px 0; }
 /* apply hovers to modern browsers */
 .sf-menu ul a:focus > .sf-sub-indicator,
 .sf-menu ul a:hover > .sf-sub-indicator,

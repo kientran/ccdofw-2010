@@ -118,9 +118,9 @@ body {
 div#container {
   @include box-shadow;
   @include border-radius;
-  background: white url(../images/buildingcharcol.jpg) no-repeat;
-  background-position: 0% 90%;
-
+  //background: #ccc url(../images/buildingcharcol.jpg) no-repeat;
+  //background-position: 0% 90%;
+  @include linear-gradient(color-stops($ccblue, $ccblue - #022 ));
 }
 header {
   div#searchbar {
@@ -140,11 +140,13 @@ header {
   }
   div#logobar {
     //@include linear-gradient(color-stops($ccblue, $ccblue - #022 ));
+    padding: 1em 0;
     height: 125px;
     color: white;
+    background: white;
     a {
       display: block;
-      margin: 1em auto;
+      margin: 0em auto;
       height: 125px;
       width: 325px;
       text-indent: -9999px;
@@ -155,69 +157,37 @@ header {
     @include append(2);
     @include prepend(2);
     @include column(20);
-    margin: 2em 0;
-    div#nav_container {
-      height: 34px;
-      border-bottom: 4px solid black;
-    }
-}
-/*
-  navigation {
-    font-size: 1.2em;
-    @include append(2);
-    @include prepend(2);
-    @include column(20);
-    a {
-      color: black;
-    }
-    a:hover {
-      color: $ccblue;
-    }
-    ul {
-      list-style: none;
-      border-bottom: 4px solid black;
-      margin: 1em 0;
-    }
-
-    li {
-      float: left;
-      position: relative;
-      margin-bottom: -4px;
-      margin-left: 10px;
-      margin-right: 10px;
-      border-bottom: 4px solid black;
-    }
-
-    li a {
-      margin-bottom: -4px;
-      padding-bottom: 10px;
-      display: block;
-    }
-
-    ul .first {
-      margin-left: 0px;
-    }
-
-    ul .current {
-      border-color: $ccblue;
-    }
-
-    ul .current a, ul .current a:hover {
-      border-left: 4px solid white;
-      border-right: 4px solid white;
-    }
-
+    @include linear-gradient(color-stops($ccblue, $ccblue - #022 ));
+    margin: 0em 0;
+    height: 34px;
     div#nav_donate {
+      margin: 5px 0;
       float:right;
-      margin-top: 5px;
     }
-  
-  } */
+    div#nav_container {
+      //border-bottom: 4px solid black;
+    }
+  }
+
+}
+
+
+div#content, div#sidebar {
+  margin-top: 1em;
+}
+div#upper_front {
+  background: white;
+  padding: 5px;
+  @include border-radius;
+  .readstory {
+    float: right;
+    margin-right: 10px;
+  }
 }
 
 .boxgrid {
-  width: 588px;
-  height: 175px;
+  width: 580px;
+  height: 385px;
   margin: 0px;
   margin-bottom: 10px;
   background: white;
@@ -254,7 +224,7 @@ header {
 }
 
 .caption .boxcaption {
-  top: 140px;
+  bottom: 0px;
   left: 0;
 }
 
