@@ -371,8 +371,7 @@ div#content, div#sidebar {
 
 /* line 178, ../src/screen.scss */
 div#upper_front {
-  background: white;
-  padding: 5px;
+  overflow: hidden;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   -o-border-radius: 5px;
@@ -380,15 +379,15 @@ div#upper_front {
   -khtml-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 182, ../src/screen.scss */
+/* line 181, ../src/screen.scss */
 div#upper_front .readstory {
   float: right;
   margin-right: 10px;
 }
 
-/* line 188, ../src/screen.scss */
+/* line 187, ../src/screen.scss */
 .boxgrid {
-  width: 580px;
+  width: 590px;
   height: 385px;
   margin: 0px;
   margin-bottom: 10px;
@@ -401,28 +400,28 @@ div#upper_front .readstory {
   -o-box-shadow: #333333 1px 1px 5px;
   box-shadow: #333333 1px 1px 5px;
 }
-/* line 198, ../src/screen.scss */
+/* line 197, ../src/screen.scss */
 .boxgrid img {
   position: absolute;
   top: 0;
   left: 0;
   border: 0;
 }
-/* line 204, ../src/screen.scss */
+/* line 203, ../src/screen.scss */
 .boxgrid p {
   padding: 0 10px;
   color: white;
   font: 10pt;
   margin: 1em;
 }
-/* line 210, ../src/screen.scss */
+/* line 209, ../src/screen.scss */
 .boxgrid h3 {
   color: white;
   font-size: 1.7em;
   margin: 0.25em 1em;
 }
 
-/* line 217, ../src/screen.scss */
+/* line 216, ../src/screen.scss */
 .boxcaption {
   float: left;
   position: absolute;
@@ -432,13 +431,13 @@ div#upper_front .readstory {
   opacity: 0.9;
 }
 
-/* line 226, ../src/screen.scss */
+/* line 225, ../src/screen.scss */
 .caption .boxcaption {
   bottom: 0px;
   left: 0;
 }
 
-/* line 233, ../src/screen.scss */
+/* line 232, ../src/screen.scss */
 div#front_action a {
   text-align: center;
   font-size: 2em;
@@ -446,7 +445,7 @@ div#front_action a {
   margin-bottom: 1em;
 }
 
-/* line 241, ../src/screen.scss */
+/* line 240, ../src/screen.scss */
 div#lower_front {
   display: inline;
   float: left;
@@ -457,7 +456,7 @@ div#lower_front {
 * html div#lower_front {
   overflow-x: hidden;
 }
-/* line 243, ../src/screen.scss */
+/* line 242, ../src/screen.scss */
 div#lower_front div {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -475,26 +474,26 @@ div#lower_front div {
   padding: 1em;
   margin: 1em 0;
 }
-/* line 252, ../src/screen.scss */
+/* line 251, ../src/screen.scss */
 div#lower_front div#lower_front_top {
   float: left;
 }
-/* line 255, ../src/screen.scss */
+/* line 254, ../src/screen.scss */
 div#lower_front div#lower_front_bottom {
   float: left;
 }
-/* line 258, ../src/screen.scss */
+/* line 257, ../src/screen.scss */
 div#lower_front h2 {
   font-size: 1.5em;
   color: #003975;
   margin-bottom: 1em;
 }
-/* line 263, ../src/screen.scss */
+/* line 262, ../src/screen.scss */
 div#lower_front ul li {
   margin-bottom: 1em;
 }
 
-/* line 269, ../src/screen.scss */
+/* line 268, ../src/screen.scss */
 div#left_sidebar div#side_navigation {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -508,13 +507,13 @@ div#left_sidebar div#side_navigation {
   box-shadow: #333333 1px 1px 5px;
   padding: 1em;
 }
-/* line 275, ../src/screen.scss */
+/* line 274, ../src/screen.scss */
 div#left_sidebar h3 {
   font-size: 1.2em;
   margin-bottom: 1em;
 }
 
-/* line 281, ../src/screen.scss */
+/* line 280, ../src/screen.scss */
 div#content_container {
   background: white;
   -moz-border-radius: 5px;
@@ -529,25 +528,26 @@ div#content_container {
   box-shadow: #333333 1px 1px 5px;
   padding: 1em;
 }
-/* line 286, ../src/screen.scss */
+/* line 285, ../src/screen.scss */
 div#content_container h1 {
   font-size: 2em;
   margin: 0 0 1em 0;
 }
-/* line 290, ../src/screen.scss */
+/* line 289, ../src/screen.scss */
 div#content_container h2 {
   font-size: 1.5em;
   margin: 0 0 1em 0;
 }
 
-/* line 298, ../src/screen.scss */
-div#sidebar div#heathers_box div#heathers_text {
+/* line 296, ../src/screen.scss */
+div#sidebar div#heathers_box {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   -o-border-radius: 5px;
   -ms-border-radius: 5px;
   -khtml-border-radius: 5px;
   border-radius: 5px;
+  overflow: hidden;
   -moz-box-shadow: #333333 1px 1px 5px;
   -webkit-box-shadow: #333333 1px 1px 5px;
   -o-box-shadow: #333333 1px 1px 5px;

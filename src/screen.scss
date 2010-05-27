@@ -176,8 +176,7 @@ div#content, div#sidebar {
   margin-top: 1em;
 }
 div#upper_front {
-  background: white;
-  padding: 5px;
+  overflow: hidden;
   @include border-radius;
   .readstory {
     float: right;
@@ -186,7 +185,7 @@ div#upper_front {
 }
 
 .boxgrid {
-  width: 580px;
+  width: 590px;
   height: 385px;
   margin: 0px;
   margin-bottom: 10px;
@@ -295,11 +294,12 @@ div#content_container {
 
 div#sidebar {
   div#heathers_box {
-    div#heathers_text {
       @include border-radius;
+      overflow: hidden;
       @include box-shadow;
       border: 1px solid black;
       background: white;
+    div#heathers_text {
     }
     p {
       margin: 0px;
