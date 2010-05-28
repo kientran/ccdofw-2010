@@ -15,8 +15,9 @@ $(document).ready(function() {
                       // not display:none when measuring. Call before initialising 
                       // containing tabs for same reason. 
     $("#upper_front").after('<div id="pager">').cycle({
-      fx: 'scrollLeft',
+      fx: 'fade',
       timeout: 7000,
+      pause: true,
       pager: '#pager',
       pagerAnchorBuilder: function(idx, slide) {
         return '<a href="#" class="blue awesome">' + (idx + 1).toString() + '</a>';
