@@ -59,6 +59,12 @@ body.three-col {
   } 
 }
 
+navigation, div#featured_stories, div#action_buttons {
+  @include append(2);
+  @include prepend(2);
+  @include column(20);
+}
+
 body {
   height: 100%;
   background: #d4cdbd;
@@ -118,8 +124,6 @@ body {
 div#container {
   @include box-shadow;
   @include border-radius;
-  //background: #ccc url(../images/buildingcharcol.jpg) no-repeat;
-  //background-position: 0% 90%;
   @include linear-gradient(color-stops($ccblue, $ccblue - #022 ));
 }
 header {
@@ -139,7 +143,6 @@ header {
     }
   }
   div#logobar {
-    //@include linear-gradient(color-stops($ccblue, $ccblue - #022 ));
     padding: 1em 0;
     height: 125px;
     color: white;
@@ -154,18 +157,12 @@ header {
     }  
   }
   navigation {
-    @include append(2);
-    @include prepend(2);
-    @include column(20);
     @include linear-gradient(color-stops($ccblue, $ccblue - #022 ));
-    margin: 0em 0;
     height: 34px;
     div#nav_donate {
       margin: 5px 0;
+      font-size: 1.05em;
       float:right;
-    }
-    div#nav_container {
-      //border-bottom: 4px solid black;
     }
   }
 
@@ -177,23 +174,25 @@ div#featured_stories, div#sidebar {
 }
 
 div#featured_stories {
-  @include append(2);
-  @include prepend(2);
-  @include column(20);
-
-}
-div#upper_front {
-  overflow: hidden;
-  @include border-radius;
-  .readstory {
+  div#pager {
+    margin: 1em auto;
+    text-align: center;
+    a {
+      margin-right: 5px;
+    }
+    a.activeSlide {
+      background: green;
+    }
+  }
+.readstory {
     float: right;
     margin-right: 10px;
   }
 }
-
+  
 .boxgrid {
   @include column(20);
-  height: 525px;
+  height: 444px;
   margin: 0px;
   margin-bottom: 10px;
   background: white;
@@ -226,7 +225,7 @@ div#upper_front {
   background: $ccblue;
   height: 100px;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.7;
 }
 
 .caption .boxcaption {
@@ -235,13 +234,9 @@ div#upper_front {
 }
 
 
-div#front_action {
-  a {
-    text-align: center;
-    font-size: 2em;
-    width: 170px;
-    margin-bottom: 1em;
-  }
+div#action_buttons {
+  font-size: 1.75em;
+  text-align: center;
 }
 
 div#lower_front {
@@ -301,7 +296,7 @@ div#content_container {
 }
 
 div#sidebar {
-  div#heathers_box {
+  div#about_box{
       @include border-radius;
       overflow: hidden;
       @include box-shadow;
@@ -328,7 +323,6 @@ footer {
   margin-top: 2em;
   border-top: 1px solid black;
   @include linear-gradient(color-stops($ccblue, $ccblue - #022 ));
-  //background: #b8ae96;
   font-size: 0.8em;
   line-height: 1.5em;
   table {
@@ -347,11 +341,7 @@ footer {
     font-weight: bold;
     color: #ccc;
     margin-bottom: 1em;
-  }
-  #footer_address {
-    p {
-      margin-left: 30px;
-    }
+    margin-top: 0px;
   }
   #copyright {
     text-align: center;
