@@ -189,42 +189,7 @@ body.two-col #content {
   overflow-x: hidden;
 }
 
-/* line 47, ../src/screen.scss */
-body.three-col #left_sidebar {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 190px;
-  padding-left: 80px;
-}
-/* line 138, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.three-col #left_sidebar {
-  overflow-x: hidden;
-}
-/* line 52, ../src/screen.scss */
-body.three-col #sidebar {
-  display: inline;
-  float: left;
-  margin-right: 0;
-  width: 190px;
-}
-/* line 138, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.three-col #sidebar {
-  overflow-x: hidden;
-}
-/* line 56, ../src/screen.scss */
-body.three-col #content {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 390px;
-}
-/* line 138, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.three-col #content {
-  overflow-x: hidden;
-}
-
-/* line 62, ../src/screen.scss */
+/* line 46, ../src/screen.scss */
 navigation, div#featured_stories, div#action_buttons {
   padding-right: 80px;
   padding-left: 80px;
@@ -238,7 +203,7 @@ navigation, div#featured_stories, div#action_buttons {
   overflow-x: hidden;
 }
 
-/* line 68, ../src/screen.scss */
+/* line 52, ../src/screen.scss */
 body {
   height: 100%;
   background: #d4cdbd;
@@ -249,23 +214,23 @@ body {
   font-family: "Helvetica Neue", "Arial", "Helvetica", sans-serif;
   font-size: 10pt;
 }
-/* line 76, ../src/screen.scss */
+/* line 60, ../src/screen.scss */
 body a {
   text-decoration: none;
   font-weight: bold;
   color: #003975;
 }
-/* line 81, ../src/screen.scss */
+/* line 65, ../src/screen.scss */
 body a:hover {
   text-decoration: underline;
 }
-/* line 84, ../src/screen.scss */
+/* line 68, ../src/screen.scss */
 body p {
   line-height: 1.4em;
   margin: 1em 0;
 }
 
-/* line 90, ../src/screen.scss */
+/* line 74, ../src/screen.scss */
 .awesome {
   background: #222;
   display: inline-block;
@@ -284,27 +249,27 @@ body p {
   cursor: pointer;
 }
 
-/* line 110, ../src/screen.scss */
+/* line 94, ../src/screen.scss */
 .green.awesome {
   background-color: green;
 }
 
-/* line 113, ../src/screen.scss */
+/* line 97, ../src/screen.scss */
 .green.awesome:hover {
   background-color: #22a222;
 }
 
-/* line 117, ../src/screen.scss */
+/* line 101, ../src/screen.scss */
 .blue.awesome {
   background-color: #003975;
 }
 
-/* line 120, ../src/screen.scss */
+/* line 104, ../src/screen.scss */
 .blue.awesome:hover {
   background-color: #225b97;
 }
 
-/* line 124, ../src/screen.scss */
+/* line 108, ../src/screen.scss */
 div#container {
   -moz-box-shadow: #333333 1px 1px 5px;
   -webkit-box-shadow: #333333 1px 1px 5px;
@@ -320,7 +285,7 @@ div#container {
   background-image: -moz-linear-gradient(top, #003975 0%, #001753 100%);
 }
 
-/* line 130, ../src/screen.scss */
+/* line 114, ../src/screen.scss */
 header div#searchbar {
   text-align: right;
   font-size: 0.7em;
@@ -331,22 +296,22 @@ header div#searchbar {
   padding-right: 80px;
   color: #ccc;
 }
-/* line 138, ../src/screen.scss */
+/* line 122, ../src/screen.scss */
 header div#searchbar a {
   color: #ccc;
 }
-/* line 141, ../src/screen.scss */
+/* line 125, ../src/screen.scss */
 header div#searchbar input {
   margin-left: 10px;
 }
-/* line 145, ../src/screen.scss */
+/* line 129, ../src/screen.scss */
 header div#logobar {
   padding: 1em 0;
   height: 125px;
   color: white;
   background: white;
 }
-/* line 150, ../src/screen.scss */
+/* line 134, ../src/screen.scss */
 header div#logobar a {
   display: block;
   margin: 0em auto;
@@ -355,44 +320,44 @@ header div#logobar a {
   text-indent: -9999px;
   background-image: url(../images/cclogo.png);
 }
-/* line 159, ../src/screen.scss */
+/* line 143, ../src/screen.scss */
 header navigation {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #003975), color-stop(100%, #001753));
   background-image: -moz-linear-gradient(top, #003975 0%, #001753 100%);
   height: 34px;
 }
-/* line 162, ../src/screen.scss */
+/* line 146, ../src/screen.scss */
 header navigation div#nav_donate {
   margin: 5px 0;
   font-size: 1.05em;
   float: right;
 }
 
-/* line 172, ../src/screen.scss */
-div#featured_stories, div#sidebar {
+/* line 156, ../src/screen.scss */
+div#featured_stories, div#sidebar, div#content {
   margin-top: 1em;
 }
 
-/* line 177, ../src/screen.scss */
+/* line 161, ../src/screen.scss */
 div#featured_stories div#pager {
   margin: 1em auto;
   text-align: center;
 }
-/* line 180, ../src/screen.scss */
+/* line 164, ../src/screen.scss */
 div#featured_stories div#pager a {
   margin-right: 5px;
 }
-/* line 183, ../src/screen.scss */
+/* line 167, ../src/screen.scss */
 div#featured_stories div#pager a.activeSlide {
   background: green;
 }
-/* line 187, ../src/screen.scss */
+/* line 171, ../src/screen.scss */
 div#featured_stories .readstory {
   float: right;
   margin-right: 10px;
 }
 
-/* line 193, ../src/screen.scss */
+/* line 177, ../src/screen.scss */
 .boxgrid {
   display: inline;
   float: left;
@@ -414,28 +379,28 @@ div#featured_stories .readstory {
 * html .boxgrid {
   overflow-x: hidden;
 }
-/* line 203, ../src/screen.scss */
+/* line 187, ../src/screen.scss */
 .boxgrid img {
   position: absolute;
   top: 0;
   left: 0;
   border: 0;
 }
-/* line 209, ../src/screen.scss */
+/* line 193, ../src/screen.scss */
 .boxgrid p {
   padding: 0 10px;
   color: white;
   font: 10pt;
   margin: 1em;
 }
-/* line 215, ../src/screen.scss */
+/* line 199, ../src/screen.scss */
 .boxgrid h3 {
   color: white;
   font-size: 1.7em;
   margin: 0.25em 1em;
 }
 
-/* line 222, ../src/screen.scss */
+/* line 206, ../src/screen.scss */
 .boxcaption {
   float: left;
   position: absolute;
@@ -445,19 +410,19 @@ div#featured_stories .readstory {
   opacity: 0.9;
 }
 
-/* line 231, ../src/screen.scss */
+/* line 215, ../src/screen.scss */
 .caption .boxcaption {
   bottom: 0px;
   left: 0;
 }
 
-/* line 237, ../src/screen.scss */
+/* line 221, ../src/screen.scss */
 div#action_buttons {
   font-size: 1.75em;
   text-align: center;
 }
 
-/* line 242, ../src/screen.scss */
+/* line 226, ../src/screen.scss */
 div#lower_front {
   display: inline;
   float: left;
@@ -468,7 +433,7 @@ div#lower_front {
 * html div#lower_front {
   overflow-x: hidden;
 }
-/* line 244, ../src/screen.scss */
+/* line 228, ../src/screen.scss */
 div#lower_front div {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -486,27 +451,27 @@ div#lower_front div {
   padding: 1em;
   margin: 1em 0;
 }
-/* line 253, ../src/screen.scss */
+/* line 237, ../src/screen.scss */
 div#lower_front div#lower_front_top {
   float: left;
 }
-/* line 256, ../src/screen.scss */
+/* line 240, ../src/screen.scss */
 div#lower_front div#lower_front_bottom {
   float: left;
 }
-/* line 259, ../src/screen.scss */
+/* line 243, ../src/screen.scss */
 div#lower_front ul li {
   margin-bottom: 1em;
 }
 
-/* line 264, ../src/screen.scss */
+/* line 248, ../src/screen.scss */
 h2 {
   font-size: 1.5em;
   color: #003975;
   margin-bottom: 1em;
 }
 
-/* line 271, ../src/screen.scss */
+/* line 255, ../src/screen.scss */
 div#left_sidebar div#side_navigation {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -520,13 +485,13 @@ div#left_sidebar div#side_navigation {
   box-shadow: #333333 1px 1px 5px;
   padding: 1em;
 }
-/* line 277, ../src/screen.scss */
+/* line 261, ../src/screen.scss */
 div#left_sidebar h3 {
   font-size: 1.2em;
   margin-bottom: 1em;
 }
 
-/* line 283, ../src/screen.scss */
+/* line 267, ../src/screen.scss */
 div#content_container {
   background: white;
   -moz-border-radius: 5px;
@@ -541,18 +506,18 @@ div#content_container {
   box-shadow: #333333 1px 1px 5px;
   padding: 1em;
 }
-/* line 288, ../src/screen.scss */
+/* line 272, ../src/screen.scss */
 div#content_container h1 {
   font-size: 2em;
   margin: 0 0 1em 0;
 }
-/* line 292, ../src/screen.scss */
+/* line 276, ../src/screen.scss */
 div#content_container h2 {
   font-size: 1.5em;
   margin: 0 0 1em 0;
 }
 
-/* line 299, ../src/screen.scss */
+/* line 283, ../src/screen.scss */
 div#sidebar div#about_box {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -570,7 +535,7 @@ div#sidebar div#about_box {
   padding: 1em;
 }
 
-/* line 309, ../src/screen.scss */
+/* line 293, ../src/screen.scss */
 footer {
   color: #ccc;
   margin-top: 2em;
@@ -580,44 +545,44 @@ footer {
   font-size: 0.8em;
   line-height: 1.5em;
 }
-/* line 311, ../src/screen.scss */
+/* line 295, ../src/screen.scss */
 footer table {
   padding: 0;
   margin: 0;
 }
-/* line 315, ../src/screen.scss */
+/* line 299, ../src/screen.scss */
 footer a {
   color: #ccc;
   font-weight: normal;
 }
-/* line 319, ../src/screen.scss */
+/* line 303, ../src/screen.scss */
 footer a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 328, ../src/screen.scss */
+/* line 312, ../src/screen.scss */
 footer table {
   padding-left: 80px;
   padding-right: 80px;
   width: 100%;
   margin-top: 2em;
 }
-/* line 334, ../src/screen.scss */
+/* line 318, ../src/screen.scss */
 footer table tr td {
   vertical-align: top;
 }
-/* line 337, ../src/screen.scss */
+/* line 321, ../src/screen.scss */
 footer li {
   list-style: none;
 }
-/* line 340, ../src/screen.scss */
+/* line 324, ../src/screen.scss */
 footer .footer_head {
   font-weight: bold;
   color: #ccc;
   margin-bottom: 1em;
   margin-top: 0px;
 }
-/* line 346, ../src/screen.scss */
+/* line 330, ../src/screen.scss */
 footer #copyright {
   text-align: center;
   padding: 1em;
