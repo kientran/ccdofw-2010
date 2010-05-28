@@ -20,7 +20,7 @@ $(document).ready(function() {
       pause: true,
       pager: '#pager',
       pagerAnchorBuilder: function(idx, slide) {
-        return '<a href="#" class="blue awesome">' + (idx + 1).toString() + '</a>';
+        return '<a href="#">' + (idx + 1).toString() + '</a>';
       }
     });
 });
