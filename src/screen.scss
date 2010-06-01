@@ -21,7 +21,7 @@ $ccblue: #003975;
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
-body.two-col, body.three-col {
+body.two-col {
   #container {
     @include container; }
   header, footer {
@@ -109,25 +109,36 @@ div#container {
   @include box-shadow;
   @include border-radius;
   @include linear-gradient(color-stops($ccblue, $ccblue - #022 ));
+  border: 1px solid black;
 }
 header {
   div#searchbar {
     text-align: right;
-    font-size: 0.7em;
+    font-size: 0.8em;
     @include linear-gradient(color-stops($ccblue, $ccblue - #022 ));
     height: 30px;
     padding-top: 5px;
     @include append(2);
     color: #ccc;
+    form {
+      display: inline;
+    }
     a {
       color: #ccc;
+      font-weight: normal;
     }
     input {
       margin-left: 10px;
+      color: black;
+    }
+    .faded {
+      color: #777;
     }
   }
   div#logobar {
     padding: 1em 0;
+    border-top: 1px solid $ccblue;
+    border-bottom: 1px solid black;
     height: 125px;
     color: white;
     background: white;
@@ -190,125 +201,108 @@ div#featured_stories {
       background: green;
     }
   }
-.readstory {
+  .readstory {
     bottom: 30px;
     text-align: center;
     position: absolute;
     width: 190px;
   }
+  .boxgrid {
+    @include column(20);
+    height: 444px;
+    margin: 0px;
+    margin-bottom: 10px;
+    background: white;
+    border: solid 1px black;
+    overflow: hidden;
+    position: relative;
+    @include box-shadow;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 0;
+    }
+    p {
+      padding: 0 10px;
+      color: white;
+      margin: 1em;
+    }
+    h3 {
+      color: white;
+      font-size: 1.5em;
+      margin: 0.25em 1em;
+    }
+  }
+  .boxcaption {
+    position: absolute;
+    background: $ccblue - #022;
+    height: 444px;
+    width: 190px;
+    opacity: 0.9;
+    bottom: 0px;
+    right: 0;
+  }
 }
   
-.boxgrid {
-  @include column(20);
-  height: 444px;
-  margin: 0px;
-  margin-bottom: 10px;
-  background: white;
-  border: solid 1px black;
-  overflow: hidden;
-  position: relative;
-  @include box-shadow;
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 0;
-  }
-  p {
-    padding: 0 10px;
-    color: white;
-    font: 10pt;
-    margin: 1em;
-  }
-  h3 {
-    color: white;
-    font-size: 1.7em;
-    margin: 0.25em 1em;
-  }
-}
-
-.boxcaption {
-  position: absolute;
-  background: $ccblue - #022;
-  height: 444px;
-  width: 190px;
-  opacity: 0.9;
-}
-
-.caption .boxcaption {
-  bottom: 0px;
-  right: 0;
-}
-
 
 div#action_buttons {
   font-size: 1.75em;
   text-align: center;
 }
 
-div#lower_front {
-  @include column(15);
-  div {
-    @include border-radius;
-    @include box-shadow;
-    border: 1px solid black;
-    background: white ;
-    display: block;
-    padding: 1em;
-  }
-  div#lower_front_top{
-    float: left;
-  }
-  div#lower_front_bottom {
-    float: left;
-  }
-    ul li {
-    margin-bottom: 1em;
-  }
-}
-
-h2 {
-    font-size: 1.5em;
-    color: $ccblue;
-    margin-bottom: 1em;
-  }
-
-div#left_sidebar {
-  div#side_navigation {
-    @include border-radius;
-    @include box-shadow;    
-    padding: 1em;
-  }
-
-  h3 {
-    font-size: 1.2em;
-    margin-bottom: 1em;
-  }
-}
-
-div#content_container {
+div#content_container, div#sidebar_container{
   background: white;
   @include border-radius;
   @include box-shadow;
   padding: 1em;
+  h1, h2, h3 {
+    color: $ccblue;
+    margin: 0 0 1em 0;
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid $ccblue;
+    a {
+      font-weight: normal;
+    }
+  }
   h1 {
     font-size: 2em;
-    margin: 0 0 1em 0;
   }
   h2 {
     font-size: 1.5em;
-    margin: 0 0 1em 0;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  ul {
+    list-style: disc;
+    margin-left: 2em;
+  }
+  ol {
+    list-style: decimal;
+    margin-left: 2em;
+  }
+  blockquote {
+    border-left: 3px solid $ccblue;
+    margin: 1em;
+    padding: 0 1em;
+    font-style: italic;
+  }
+  em {
+    font-style: italic;
+  }
+  strong {
+    font-weight: bold;
+  }
+  pre, code {
+    font-family: monospace;
   }
 }
 
 div#sidebar {
-  div#about_box{
-      @include border-radius;
-      overflow: hidden;
-      @include box-shadow;
-      border: 1px solid black;
-      background: white;
-      padding: 1em;
+  ul {
+    list-style: none;
+    margin-left: 0em;
   }
 }
 
