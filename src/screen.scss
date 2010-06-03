@@ -53,8 +53,9 @@ navigation, div#featured_stories, div#action_buttons {
 
 body {
   height: 100%;
-  background: #d4cdbd;
-  @include linear-gradient(color-stops(#b8ae96, #d4cdbd));
+  //background: #d4cdbd;
+  //@include linear-gradient(color-stops(#b8ae96, #d4cdbd));
+  background: #f7e9c6 url(../images/background.jpg) top;
   margin: 10px 0;
   background-repeat: no-repeat;
   font-family: "Helvetica Neue", "Arial", "Helvetica", sans-serif;
@@ -341,7 +342,7 @@ footer {
     text-decoration: underline;
   }
   margin-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   border-top: 1px solid black;
   font-size: 0.8em;
   line-height: 1.5em;
