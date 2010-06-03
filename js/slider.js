@@ -8,6 +8,13 @@ $(document).ready(function() {
   }).superfish();     // call supersubs first, then superfish, so that subs are 
                       // not display:none when measuring. Call before initialising 
                       // containing tabs for same reason. 
+
+  //$('.boxcaption').stop().hide();
+
+  function onAfter() {
+    $('.boxcaption', this).stop().slideToggle('slow');
+  }
+
   $("#upper_front").after('<div id="pager">').cycle({
     fx: 'fade',
     timeout: 7000,

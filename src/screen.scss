@@ -23,7 +23,9 @@ $ccblue: #003975;
 
 body.two-col {
   #container {
-    @include container; }
+    @include container; 
+    width: 960px;
+  }
   header, footer {
     @include column($blueprint_grid_columns); }
 }
@@ -99,23 +101,33 @@ body {
 }
 
 .blue.awesome {
-  background-color: $ccblue;
+  background-color: $ccblue - #222;
 }
 .blue.awesome:hover {
   background-color: $ccblue + #222;
 }
 
-div#container {
+header div#searchbar, header navigation, footer {
+  @include linear-gradient(color-stops($ccblue, $ccblue - #022 ));
+  /* For Internet Explorer 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#003975, endColorstr=#001753, GradientType=0)";
+}
+
+header, footer {
   @include box-shadow;
   @include border-radius;
-  @include linear-gradient(color-stops($ccblue, $ccblue - #022 ));
   border: 1px solid black;
+}
+div#container {
+  //@include box-shadow;
+  //@include border-radius;
+  //border: 1px solid black;
+  //background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($ccblue), to($ccblue - #022) );
 }
 header {
   div#searchbar {
     text-align: right;
     font-size: 0.8em;
-    @include linear-gradient(color-stops($ccblue, $ccblue - #022 ));
     height: 30px;
     padding-top: 5px;
     @include append(2);
@@ -139,29 +151,28 @@ header {
     padding: 1em 0;
     border-top: 1px solid $ccblue;
     border-bottom: 1px solid black;
-    height: 125px;
+    height: 100px;
     color: white;
     background: white;
     a {
       display: block;
       float: left;
       margin-left: 80px; 
-      height: 125px;
-      width: 325px;
+      height: 100px;
+      width: 260px;
       text-indent: -9999px;
       background-image: url(../images/cclogo.png);
     }  
     div#creed {
       float:right;
       margin-right: 80px;
-      margin-top: 20px;
+      margin-top: 10px;
       color: $ccblue;
       font-size: 2em;
       font-family: serif;
     }
   }
   navigation {
-    @include linear-gradient(color-stops($ccblue, $ccblue - #022 ));
     height: 34px;
     div#nav_donate {
       margin: 5px 0;
@@ -194,7 +205,7 @@ div#featured_stories {
       margin-right: 5px;
       //background-image: url(../images/arrow-blue.png);
       text-indent: 9999px;
-      background: #333;
+      background: black;
       @include border-radius;
     }
     a.activeSlide {
@@ -215,7 +226,7 @@ div#featured_stories {
     background: white;
     border: solid 1px black;
     overflow: hidden;
-    position: relative;
+    //position: relative;
     @include box-shadow;
     img {
       position: absolute;
@@ -236,10 +247,12 @@ div#featured_stories {
   }
   .boxcaption {
     position: absolute;
-    background: $ccblue - #022;
+    //background: $ccblue - #022;
+    background: #333;
     height: 444px;
     width: 190px;
     opacity: 0.9;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=90)"; /*IE8*/
     bottom: 0px;
     right: 0;
   }
@@ -260,10 +273,13 @@ div#content_container, div#sidebar_container{
     color: $ccblue;
     margin: 0 0 1em 0;
     padding: 0 0 5px 0;
-    border-bottom: 1px solid $ccblue;
     a {
       font-weight: normal;
     }
+  }
+  h1, h2
+  {
+    border-bottom: 1px solid $ccblue;
   }
   h1 {
     font-size: 2em;
@@ -277,6 +293,7 @@ div#content_container, div#sidebar_container{
   ul {
     list-style: disc;
     margin-left: 2em;
+    margin-bottom: 1em;
   }
   ol {
     list-style: decimal;
@@ -304,6 +321,9 @@ div#sidebar {
     list-style: none;
     margin-left: 0em;
   }
+  li {
+    line-height: 1.5em;
+  }
 }
 
 footer {
@@ -321,8 +341,8 @@ footer {
     text-decoration: underline;
   }
   margin-top: 2em;
+  margin-bottom: 2em;
   border-top: 1px solid black;
-  @include linear-gradient(color-stops($ccblue, $ccblue - #022 ));
   font-size: 0.8em;
   line-height: 1.5em;
   table {
