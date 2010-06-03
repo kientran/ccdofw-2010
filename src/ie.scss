@@ -17,7 +17,7 @@ body.bp {
   #container, #content, #sidebar, header, footer table {
     text-align: left;
   }
-  #container, footer, navigation, div#searchbar {
+  footer, navigation, div#searchbar {
     /* For Internet Explorer 5.5 - 7 */
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#003975 endColorstr=#001753);
 
@@ -29,6 +29,10 @@ body.bp {
 
   div#featured_stories div#pager {
     bottom: 35px;
+  }
+
+  div#content_container, div#sidebar_container {
+    border: 1px solid black;
   }
 
   .boxcaption {
