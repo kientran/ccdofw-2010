@@ -269,6 +269,7 @@ div#content_container, div#sidebar_container{
   background: white;
   @include border-radius;
   @include box-shadow;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#000000')"; /* IE8 fix */
   padding: 1em;
   h1, h2, h3 {
     color: $ccblue;

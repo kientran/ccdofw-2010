@@ -31,15 +31,14 @@ body.bp {
     bottom: 35px;
   }
 
-  div#content_container, div#sidebar_container {
-    border: 1px solid black;
-  }
-
   .boxcaption {
     filter: alpha(opacity=90);
   }
   
-  
+  div#content_container, div#sidebar_container {
+    border: 1px solid black;
+  }  
+
   footer table {
     margin-left: 80px;
     margin-right: 80px;
