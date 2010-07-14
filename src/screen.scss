@@ -35,20 +35,20 @@ form.bp {
 
 body.two-col {
   #sidebar {
-    $sidebar_columns: 5;
+    $sidebar_columns: 7;
     @include column($sidebar_columns, true); 
   }
   #content {
-    $content_columns: 15;
+    $content_columns: 17;
     @include column($content_columns);
-    @include prepend(2);
+    //@include prepend(2);
    } 
 }
 
 navigation, div#featured_stories, div#action_buttons {
-  @include append(2);
-  @include prepend(2);
-  @include column(20);
+  @include append(1);
+  @include prepend(1);
+  @include column(22);
 }
 
 body {
@@ -131,7 +131,7 @@ header {
     font-size: 0.8em;
     height: 30px;
     padding-top: 5px;
-    @include append(2);
+    @include append(1);
     color: #ccc;
     form {
       display: inline;
@@ -158,7 +158,7 @@ header {
     a {
       display: block;
       float: left;
-      margin-left: 80px; 
+      margin-left: 40px; 
       height: 100px;
       width: 260px;
       text-indent: -9999px;
@@ -166,7 +166,7 @@ header {
     }  
     div#creed {
       float:right;
-      margin-right: 80px;
+      margin-right: 40px;
       margin-top: 10px;
       color: $ccblue;
       font-size: 2em;
@@ -190,6 +190,7 @@ div#featured_stories, div#sidebar, div#content {
 }
 
 div#featured_stories {
+  $featured_height: 400px;
   div#pager {
     text-align: center;
     position: relative;
@@ -220,8 +221,8 @@ div#featured_stories {
     width: 190px;
   }
   .boxgrid {
-    @include column(20);
-    height: 444px;
+    @include column(22);
+    height: $featured_height;
     margin: 0px;
     margin-bottom: 10px;
     background: white;
@@ -250,7 +251,7 @@ div#featured_stories {
     position: absolute;
     //background: $ccblue - #022;
     background: #333;
-    height: 444px;
+    height: $featured_height;
     width: 190px;
     opacity: 0.9;
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=90)"; /*IE8*/
@@ -266,11 +267,15 @@ div#action_buttons {
 }
 
 div#content_container, div#sidebar_container{
+  border: 1px solid black;
   background: white;
   @include border-radius;
   @include box-shadow;
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#000000')"; /* IE8 fix */
-  padding: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  @include prepend(1);
+  @include append(1);
   h1, h2, h3 {
     color: $ccblue;
     margin: 0 0 1em 0;
@@ -348,8 +353,8 @@ footer {
   font-size: 0.8em;
   line-height: 1.5em;
   table {
-    @include prepend(2);
-    @include append(2);
+    @include prepend(1);
+    @include append(1);
     width: 100%;
     margin-top: 2em;
   }
