@@ -45,7 +45,7 @@ body.two-col {
    } 
 }
 
-nav, div#featured_stories, div#action_buttons {
+nav, div#action_buttons {
   @include append(1);
   @include prepend(1);
   @include column(22);
@@ -190,6 +190,7 @@ div#featured_stories, div#sidebar, div#content {
 }
 
 div#featured_stories {
+  @include column(24);
   $featured_height: 400px;
   div#pager {
     text-align: center;
@@ -198,7 +199,7 @@ div#featured_stories {
     z-index: 10;
     bottom: 25px;
     float: right;
-    width: 190px;
+    width: 230px;
     
     a {
       display: inline-block;
@@ -218,23 +219,22 @@ div#featured_stories {
     bottom: 30px;
     text-align: center;
     position: absolute;
-    width: 190px;
+    width: 230px;
   }
   .boxgrid {
-    @include column(22);
+    @include column(24);
     height: $featured_height;
     margin: 0px;
     margin-bottom: 10px;
-    background: white;
     border: solid 1px black;
     overflow: hidden;
-    //position: relative;
     @include box-shadow;
     img {
       position: absolute;
       top: 0;
       left: 0;
       border: 0;
+      width: 720px;
     }
     p {
       padding: 0 10px;
@@ -249,12 +249,9 @@ div#featured_stories {
   }
   .boxcaption {
     position: absolute;
-    //background: $ccblue - #022;
     background: #333;
     height: $featured_height;
-    width: 190px;
-    opacity: 0.9;
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=90)"; /*IE8*/
+    @include column(6, true);
     bottom: 0px;
     right: 0;
   }
