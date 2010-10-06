@@ -45,7 +45,7 @@ body.two-col {
    } 
 }
 
-navigation, div#featured_stories, div#action_buttons {
+nav, div#featured_stories, div#action_buttons {
   @include append(1);
   @include prepend(1);
   @include column(22);
@@ -108,7 +108,7 @@ body {
   background-color: $ccblue + #222;
 }
 
-header div#searchbar, header navigation, footer {
+header div#searchbar, header nav, footer {
   @include linear-gradient(color-stops($ccblue, $ccblue - #022 ));
   /* For Internet Explorer 8 */
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#003975, endColorstr=#001753, GradientType=0)";
@@ -173,7 +173,7 @@ header {
       font-family: serif;
     }
   }
-  navigation {
+  nav {
     height: 34px;
     div#nav_donate {
       margin: 5px 0;
