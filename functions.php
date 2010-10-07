@@ -36,4 +36,12 @@ global $menu;
 }
 add_action('admin_menu', 'remove_menus');
 
+function remove_unused_metaboxes() {
+  remove_meta_box('commentstatusdiv','page', 'normal');
+  remove_meta_box('commentsdiv', 'page', 'normal');
+  remove_meta_box('authordiv', 'page', 'normal');
+  remove_meta_box('revisionsdiv', 'page', 'normal');
+  remove_meta_box('slugdiv', 'page', 'normal'); 
+}
+add_action('admin_head', 'remove_unused_metaboxes');
 ?>
