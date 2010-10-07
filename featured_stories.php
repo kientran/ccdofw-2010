@@ -2,8 +2,10 @@
 $args = array(
     'meta_key' => 'featured',
     'meta_value' => 'checkbox_on',
-    'sort_column' => 'menu_order'
- );
+    'sort_column' => 'menu_order',
+    'hierarchical' => 0
+ ); // hieracrhical = 0 b/c wordpress is stuipd like that.
+
 $featuredpages = get_pages($args);
 
 if( $featuredpages ) {
@@ -37,12 +39,13 @@ if( $featuredpages ) {
 <?php
     }
   }
-}
-
 ?>
 </div>
 </div>
+<?php
+} //End if
 
+?>
 
 <div id="action_buttons">
 <a href="#" class="green awesome">Donate Now</a>

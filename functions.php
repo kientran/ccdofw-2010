@@ -12,4 +12,16 @@ if ( !is_admin() ) {
   wp_enqueue_script('cycle', 'http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.72.js', false, '2.72');
   wp_enqueue_script('slider', get_bloginfo('template_url') . '/js/slider.js', false, '1.0');
 }
+
+add_action( 'init', 'register_menus');
+
+function register_menus() {
+  register_nav_menus(
+    array(
+      'main-menu' => __( 'Main Menu' ),
+      'side-menu' => __( 'Sidebar Menu' ),
+      'foot-menu' => __( 'Footer Menu' )
+    )
+  );
+}
 ?>

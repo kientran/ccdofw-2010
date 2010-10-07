@@ -1,50 +1,47 @@
+<?php
+  $blogurl = get_bloginfo('url');
+  $templateurl = get_bloginfo('template_url');
+  function print_page_children($post_slug) {
+    $page = get_page_by_path($post_slug);
+    $args = array (
+      'child_of' => $page->ID,
+      'depth' => 1,
+      'title_li' => ''
+      
+    );
+    return wp_list_pages( $args );
+  }
+?>
 <footer>
 <table>
 <tr>
   <td>
     <ul>
       <li class="footer_head">About Us</li>
-      <li><a href="">Frequent Questions</a></li>
-      <li><a href="">Board of Directors</a></li>
-      <li><a href="">Core Values</a></li>
-      <li><a href="">Contact Information</a></li>
-      <li><a href="">Employment</a></li>
+<?php echo print_page_children('about'); ?>
    </ul>
     <p>
-    <a href=""><img src="images/coalogo.png" /></a>
-    <a href=""><img src="images/unitedwaylogo.png" /></a>
+    <a href=""><img src="<?php echo $templateurl ?>/images/coalogo.png" /></a>
+    <a href=""><img src="<?php echo $templateurl ?>/images/unitedwaylogo.png" /></a>
     </p>
  </td>
   <td>
     <ul>
       <li class="footer_head">Media</li>
-      <li><a href="">News and Information</a></li>
-      <li><a href="">Photos</a></li>
-      <li><a href="">Video</a></li>
-      <li><a href="">Publications</a></li>
-      <li><a href="">Newsletter</a></li>
-    </ul>
+<?php echo print_page_children('media'); ?>
+     </ul>
   </td>
   <td>
     <ul>
       <li class="footer_head">Programs</li>
-      <li class="dir"><a href="">Business Venture Services</a></li>
-      <li class="dir"><a href="">Child Welfare Services</a></li>
-      <li class="dir"><a href="">Community Services</a></li>
-      <li class="dir"><a href="">Family Services</a></li>
-      <li class="dir"><a href="">Health Services</a></li>
-      <li class="dir"><a href="">Refugee and Immigration Services</a></li>
-      <li class="dir"><a href="">Housing Services</a></li>
+<?php echo print_page_children('programs'); ?>
     </ul>
   </td>
   <td>
     <ul>
       <li class="footer_head">Get Involved</li>
-      <li><a href="">Service Opportunities</a></li>
-      <li><a href="">In Kind Needs</a></li>
-      <li><a href="">Volunteer Center</a></li>
-      <li><a href="">Donate Now</a></li>
-    </ul>
+<?php echo print_page_children('get-involved'); ?>
+   </ul>
   </td>
   <td>
     <p class="footer_head">Address</p>
@@ -54,9 +51,9 @@
     <p class="footer_head">Phone</p>
     <p>817-534-0814</p>
     <p>
-    <a href=""><img src='images/facebook.png'></a>
-    <a href=""><img src='images/twitter.png'></a>
-    <a href=""><img src='images/youtube.png'></a>
+    <a href=""><img src='<?php echo $templateurl ?>/images/facebook.png'></a>
+    <a href=""><img src='<?php echo $templateurl ?>/images/twitter.png'></a>
+    <a href=""><img src='<?php echo $templateurl ?>/images/youtube.png'></a>
 
     </p>
   </td>
@@ -69,5 +66,6 @@
 </div>
 
 <?php wp_footer() ?>
+
 </body>
 </html>
