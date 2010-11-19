@@ -20,11 +20,7 @@
       <li class="footer_head">About Us</li>
 <?php echo print_page_children('about'); ?>
    </ul>
-    <p>
-    <a href=""><img src="<?php echo $templateurl ?>/images/coalogo.png" /></a>
-    <a href=""><img src="<?php echo $templateurl ?>/images/unitedwaylogo.png" /></a>
-    </p>
- </td>
+</td>
   <td>
     <ul>
       <li class="footer_head">Media</li>
@@ -50,16 +46,18 @@
     Fort Worth, Texas 76115</a></p>
     <p class="footer_head">Phone</p>
     <p>817-534-0814</p>
-    <p>
-    <a href=""><img src='<?php echo $templateurl ?>/images/facebook.png'></a>
-    <a href=""><img src='<?php echo $templateurl ?>/images/twitter.png'></a>
-    <a href=""><img src='<?php echo $templateurl ?>/images/youtube.png'></a>
-
-    </p>
   </td>
 </tr>
 </table>
-<div id="copyright">&copy; 2010 Catholic Charities - Diocese of Fort Worth 
+<div id='footerlinks'>
+<div id='affiliates'>
+    <a href=""><img src='<?php echo $templateurl ?>/images/facebook.png'></a>
+    <a href=""><img src='<?php echo $templateurl ?>/images/twitter.png'></a>
+    <a href=""><img src='<?php echo $templateurl ?>/images/youtube.png'></a>
+    <a href=""><img src="<?php echo $templateurl ?>/images/coalogo.png" /></a>
+    <a href=""><img src="<?php echo $templateurl ?>/images/unitedwaylogo.png" /></a>
+</div>
+<div id="copyright">&copy; 2010 Catholic Charities - Diocese of Fort Worth</div>
 </div>
 </footer>
 

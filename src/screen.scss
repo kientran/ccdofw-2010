@@ -364,6 +364,7 @@ footer {
   }
   table tr td {
     vertical-align: top;
+    width: 1%;
   }
   li {
     list-style: none;
@@ -374,9 +375,15 @@ footer {
     margin-bottom: 1em;
     margin-top: 0px;
   }
-  #copyright {
+  #footerlinks {
     text-align: center;
     padding: 1em;
+    div {
+      display: inline;
+    }
+    #affiliates {
+      padding-right: 1em;
+    }
   }
 }  
 
