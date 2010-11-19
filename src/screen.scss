@@ -282,7 +282,7 @@ div#content_container, div#sidebar_container{
   @include append(1);
   h1, h2, h3 {
     color: $ccblue;
-    margin: 0 0 1em 0;
+    margin: 1em 0 1em 0;
     padding: 0 0 5px 0;
     a {
       font-weight: normal;
@@ -325,6 +325,17 @@ div#content_container, div#sidebar_container{
   pre, code {
     font-family: monospace;
   }
+}
+
+div.job-listing {
+  border-bottom: 1px solid $ccblue;
+  margin-bottom: 1em;
+
+}
+
+//wierd CSS heiarcy issue
+#content_container h3.job-title {
+    margin: 0;
 }
 
 div#sidebar {

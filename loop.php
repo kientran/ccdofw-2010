@@ -73,6 +73,39 @@
 			</div><!-- .entry-content -->
 	<?php endif; ?>
 
+  <?php 
+    if( get_post_type() == 'job-posting') :
+    $id = $post->ID;
+    $program = get_post_meta($id, 'job-program', true);
+    $postingdate = get_post_meta($id, 'job-posting-date', true);
+    $expires = get_post_meta($id, 'job-expires', true);
+    $summary = get_post_meta($id, 'job-summary', true);
+    $functions = get_post_meta($id, 'job-functions', true);
+    $qualifications = get_post_meta($id, 'job-qualifications', true);
+    $hours = get_post_meta($id, 'job-hours', true);
+    $applytext = get_post_meta($id, 'job-apply-text', true);
+
+  ?>
+<span class='program-title'><strong>Program:</strong> <?php echo $program; ?></span><br />
+<span class='posting-date'><strong>Posting Date:</strong> <?php echo $postingdate; ?></span><br />
+<span class='expires-date'><strong>Expires Date:</strong> <?php echo $expires; ?></span>
+<h3 class='job'>Summary</h3>
+<?php echo $summary; ?>
+<h3 class='job'>Functions</h3>
+<?php echo $functions; ?>
+
+<h3 class='job'>Qualifications</h3>
+<?php echo $qualifications; ?>
+
+<h3 class='job'>Hours</h3>
+<?php echo $hours; ?>
+
+<h3 class='job'>How to Apply</h3>
+<?php echo $applytext; ?>
+
+  <?php
+    endif;
+  ?>
 	</div><!-- #post-## -->
 
 

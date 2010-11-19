@@ -26,6 +26,23 @@ if (is_front_page() ) {
       </ul>
 <?php
   } 
+  if ( get_post_type() == 'job-posting') :
+?>
+  <h2><a href='/employment'>Employment Opportunities</h2>
+<?php
+$loop = new WP_Query( array( 'post_type' => 'job-posting', 'posts_per_page' => 10 ) );?>
+<ul>
+<?php
+while ( $loop->have_posts() ) : $loop->the_post();
+?>
+	<li ><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></li>
+<?php
+endwhile;
+?>
+</ul>
+<?php
+
+  endif;
 }
 ?>
   </div>
