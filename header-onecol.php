@@ -13,7 +13,7 @@
   <script type="text/javascript">
     if (typeof jQuery == 'undefined')
     {
-      document.write(unescape("%3Cscript src='/wp-includes/js/jquery' type='text/javascript'%3E%3C/script%3E"));
+      document.write(unescape("%3Cscript src='/wp-includes/js/jquery/jquery.js' type='text/javascript'%3E%3C/script%3E"));
     }
   </script>
 
