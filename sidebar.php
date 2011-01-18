@@ -24,6 +24,9 @@ if (is_front_page() ) {
       <ul>
       <?php echo $children; ?>
       </ul>
+      
+    
+    
 <?php
   } 
   if ( get_post_type() == 'job-posting') :
@@ -45,6 +48,27 @@ endwhile;
   endif;
 }
 ?>
+  <?php
+        $args = array(
+          'post_type' => 'attachment',
+          'post_mime_type' => 'application/pdf,application/msword',
+          'numberposts' => -1,
+          'post_status' => null,
+          'post_parent' => $post->ID,
+          'orderby' => 'menu_order',
+          'order' => 'desc'
+          );
+        $attachments = get_posts($args);
+        if ($attachments) {
+	  echo "<h2>Related Documents</h2><ul>";
+          foreach ($attachments as $attachment) {
+            echo '<li><a href="'.wp_get_attachment_url($attachment->ID).'">';
+            echo $attachment->post_title;
+            echo '</a></li>';
+          }
+	  echo "</ul>";
+        }
+    ?>
   </div>
 </div>
 

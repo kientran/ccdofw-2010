@@ -392,8 +392,19 @@ footer {
     div {
       display: inline;
     }
+    #socialmedia {
+	@include float-left;
+	padding-left: 2em;
+    }
     #affiliates {
-      padding-right: 1em;
+      @include float-right;
+      padding-right: 2em;
+    }
+    #copyright {
+	display:block;
+	clear:both;
+	text-align:right;
+	padding-right: 2em;
     }
   }
 }  

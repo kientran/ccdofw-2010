@@ -50,10 +50,14 @@
 </tr>
 </table>
 <div id='footerlinks'>
-<div id='affiliates'>
-    <a href=""><img src='<?php echo $templateurl ?>/images/facebook.png'></a>
+  <div id='socialmedia'>
+  <a href=""><img src='<?php echo $templateurl ?>/images/facebook.png'></a>
     <a href=""><img src='<?php echo $templateurl ?>/images/twitter.png'></a>
     <a href=""><img src='<?php echo $templateurl ?>/images/youtube.png'></a>
+    <a href=""><img src='<?php echo $templateurl ?>/images/linkedin.png'></a>
+  </div>
+  
+  <div id='affiliates'>    
     <a href=""><img src="<?php echo $templateurl ?>/images/coalogo.png" /></a>
     <a href=""><img src="<?php echo $templateurl ?>/images/unitedwaylogo.png" /></a>
 </div>
