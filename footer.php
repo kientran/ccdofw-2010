@@ -51,15 +51,15 @@
 </table>
 <div id='footerlinks'>
   <div id='socialmedia'>
-  <a href=""><img src='<?php echo $templateurl ?>/images/facebook.png'></a>
-    <a href=""><img src='<?php echo $templateurl ?>/images/twitter.png'></a>
-    <a href=""><img src='<?php echo $templateurl ?>/images/youtube.png'></a>
-    <a href=""><img src='<?php echo $templateurl ?>/images/linkedin.png'></a>
+    <a href="http://www.facebook.com/pages/Catholic-Charities-Diocese-of-Fort-Worth-Inc/102614513306"><img src='<?php echo $templateurl ?>/images/facebook.png'></a>
+    <a href="http://twitter.com/ccdofw"><img src='<?php echo $templateurl ?>/images/twitter.png'></a>
+    <a href="http://www.youtube.com/CCDOFW"><img src='<?php echo $templateurl ?>/images/youtube.png'></a>
+    <a href="http://www.linkedin.com/in/catholiccharitiesfortworth"><img src='<?php echo $templateurl ?>/images/linkedin.png'></a>
   </div>
   
   <div id='affiliates'>    
-    <a href=""><img src="<?php echo $templateurl ?>/images/coalogo.png" /></a>
-    <a href=""><img src="<?php echo $templateurl ?>/images/unitedwaylogo.png" /></a>
+    <a href="http://www.coastandards.org/"><img src="<?php echo $templateurl ?>/images/coalogo.png" /></a>
+    <a href="http://www.unitedwaytarrant.org/"><img src="<?php echo $templateurl ?>/images/unitedwaylogo.png" /></a>
 </div>
 <div id="copyright">&copy; 2010 Catholic Charities - Diocese of Fort Worth</div>
 </div>
