@@ -8,15 +8,16 @@ if (is_front_page() ) {
 } else {
   
   echo '<ul>';
-  $output = wp_list_pages('echo=0&depth=1&title_li=<h2>Top Level Pages</h2>' );
+  //$output = wp_list_pages('echo=0&depth=1&title_li=<h2>Top Level Pages</h2>' );
+  $rootpages = array(237,39,31,37);
   if (is_page()) {
     $page = $post->ID;
-    if ($post->post_parent) {
+    if ($post->post_parent && !in_array($post->ID, $rootpages)) {
       $page = $post->post_parent;
     }
-    $children=wp_list_pages( 'echo=0&child_of=' . $page . '&title_li=' );
+    $children=wp_list_pages( 'echo=0&depth=1&child_of=' . $page . '&title_li=' );
     if ($children) {
-      $output = wp_list_pages ('echo=0&child_of=' . $page . '&title_li=<h2>' . get_the_title($post->ID) . '</h2>');
+      $output = wp_list_pages ('echo=0&depth=1&child_of=' . $page . '&title_li=<h2>' . get_the_title($post->post_parent) . '</h2>');
     }
   }
   echo $output;
