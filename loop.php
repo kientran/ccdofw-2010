@@ -79,7 +79,7 @@
     $program = get_post_meta($id, 'job-program', true);
     $postingdate = get_post_meta($id, 'job-posting-date', true);
     $expires = get_post_meta($id, 'job-expires', true);
-    $summary = get_post_meta($id, 'job-summary', true);
+    $description = get_post_meta($id, 'job-description', true);
     $functions = get_post_meta($id, 'job-functions', true);
     $qualifications = get_post_meta($id, 'job-qualifications', true);
     $hours = get_post_meta($id, 'job-hours', true);
@@ -89,8 +89,8 @@
 <span class='program-title'><strong>Program:</strong> <?php echo $program; ?></span><br />
 <span class='posting-date'><strong>Posting Date:</strong> <?php echo $postingdate; ?></span><br />
 <span class='expires-date'><strong>Expires Date:</strong> <?php echo $expires; ?></span>
-<h3 class='job'>Summary</h3>
-<?php echo $summary; ?>
+<h3 class='job'>Description</h3>
+<?php echo $description; ?>
 <h3 class='job'>Functions</h3>
 <?php echo $functions; ?>
 
