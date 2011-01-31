@@ -47,7 +47,7 @@ endwhile;
   <?php
         $args = array(
           'post_type' => 'attachment',
-          'post_mime_type' => 'application/pdf,application/msword',
+          'post_mime_type' => 'application/pdf,application/msword,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.openxmlformats-officedocument.wordprocessingml.document',
           'numberposts' => -1,
           'post_status' => null,
           'post_parent' => $post->ID,
