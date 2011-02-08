@@ -1,7 +1,7 @@
 <?php
 $args = array(
     'meta_key' => 'featured',
-    'meta_value' => 'checkbox_on',
+    'meta_value' => 1,
     'sort_column' => 'menu_order',
     'hierarchical' => 0
  ); // hieracrhical = 0 b/c wordpress is stuipd like that.
