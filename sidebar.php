@@ -7,7 +7,7 @@ if (is_front_page() ) {
 
 } else {
   
-  echo '<ul>';
+  echo '<ul id="sidebarnav">';
   //$output = wp_list_pages('echo=0&depth=1&title_li=<h2>Top Level Pages</h2>' );
   $rootpages = array(237,39,31,37);
   if (is_page()) {
@@ -56,7 +56,7 @@ endwhile;
           );
         $attachments = get_posts($args);
         if ($attachments) {
-	  echo "<h2>Related Documents</h2><ul>";
+	  echo "<h2 id='related-header'>Related Documents</h2><ul id='related-docs'>";
           foreach ($attachments as $attachment) {
             echo '<li><a href="'.wp_get_attachment_url($attachment->ID).'">';
             echo $attachment->post_title;
