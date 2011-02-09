@@ -23,6 +23,7 @@ Template Name: Default Two Col Page
 
 				<?php
 				error_reporting(E_ALL);
+				session_start();
 				include("/home/cathol15/public_html/wordpress/wp-content/themes/ccdofw.org/php-form-builder-class/class.form.php");
 
 				if(isset($_POST["cmd"]) && in_array($_POST["cmd"], array("submit_0"))) {
@@ -71,7 +72,6 @@ Template Name: Default Two Col Page
 					$form->addButton();
 					$form->render();
 
-					include("../footer.php");
 				}
 				?>
 
