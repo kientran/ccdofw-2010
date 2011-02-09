@@ -23,7 +23,6 @@ Template Name: Default Two Col Page
 
 				<?php
 				error_reporting(E_ALL);
-				session_start();
 				include("./php-form-builder-class/class.form.php");
 
 				if(isset($_POST["cmd"]) && in_array($_POST["cmd"], array("submit_0"))) {
