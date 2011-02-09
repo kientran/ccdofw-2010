@@ -45,7 +45,7 @@ Template Name: Default Two Col Page
 						"map" => array(3, 3, 1, 3),
 						"width" => 550,
 						"ajax" => 1,
-						"jsIncludesPath" => "./php-form-builder-class/includes"
+						"jsIncludesPath" => "/wp-content/themes/ccdofw.org/php-form-builder-class/includes"
 					));
 
 					if(!empty($_GET["errormsg_0"]))
