@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Default Two Col Page
+Template Name: Newsletter Signup Form
 */
 ?>
 <?php get_header() ?>
@@ -23,8 +23,9 @@ Template Name: Default Two Col Page
 
 				<?php
 				error_reporting(E_ALL);
-				session_start();
+
 				include("/home/cathol15/public_html/wordpress/wp-content/themes/ccdofw.org/php-form-builder-class/class.form.php");
+				#include("/wp-content/themes/ccdofw.org/php-form-builder-class/class.form.php");
 
 				if(isset($_POST["cmd"]) && in_array($_POST["cmd"], array("submit_0"))) {
 					$form = new form("googlespreadsheets_" . substr($_POST["cmd"], -1));
