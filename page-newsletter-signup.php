@@ -20,6 +20,7 @@ Content
 
 			</div><!-- .entry-content -->	
 
+		</div>
 </div>
 </div>
 
