@@ -25,6 +25,15 @@ function register_menus() {
   );
 }
 
+function register_calendar_sidebar() {
+  register_sidebar(
+    array(
+	  'name'=>'calendarsidebar'
+	)
+  );
+}
+add_action( 'init', 'register_calendar_sidebar');
+
 function remove_menus () {
 global $menu;
 	$restricted = array(__('Dashboard'), __('Posts'), __('Media'), __('Links'),  __('Tools'), __('Comments')) ;
