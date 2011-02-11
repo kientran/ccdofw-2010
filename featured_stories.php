@@ -33,7 +33,7 @@ if( $featuredpages ) {
       <div class="boxcaption">
         <h3><?php echo $title ?></h3>
         <p><?php echo $text ?></p>
-        <div class="readstory"><a href="<?php echo $pageurl ?>" class="green awesome">See My Story</a></div>
+        <div class="readstory"><a href="<?php echo $pageurl ?>" class="green awesome">Learn More</a></div>
       </div>
     </div> 
 <?php
