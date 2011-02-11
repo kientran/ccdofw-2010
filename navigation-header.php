@@ -1,5 +1,5 @@
   <nav>
-    <div id="nav_donate"><a href="" class="green awesome">Donate now</a></div>
+    <div id="nav_donate"><a href="https://app.etapestry.com/hosted/CatholicCharitiesFortWorth/OnlineDonation.html" class="green awesome">Donate now</a></div>
     <div id='nav_container'>
     
     <?php 
