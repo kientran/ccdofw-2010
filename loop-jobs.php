@@ -31,8 +31,9 @@ while ( $loop->have_posts() ) : $loop->the_post();
 <?php
 $id = $post->ID;
 $program = get_post_meta($id, 'job-program', true);
-$postingdate = get_post_meta($id, 'job-posting-date', true);
-$expires = get_post_meta($id, 'job-expires', true);
+$postingdate = get_the_date();
+$expiredate = get_post_meta($id, 'expiration-date', true);
+$expires = date('F j, Y', $expiredate);
 $summary = get_post_meta($id, 'job-summary', true);
 
 ?>
