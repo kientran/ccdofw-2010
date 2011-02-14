@@ -77,7 +77,7 @@
     if( get_post_type() == 'job-posting') :
     $id = $post->ID;
     $program = get_post_meta($id, 'job-program', true);
-    $postingdate = get_post_meta($id, 'job-posting-date', true);
+    $postingdate = get_the_date();
     $expires = get_post_meta($id, 'job-expires', true);
     $description = get_post_meta($id, 'job-description', true);
     $functions = get_post_meta($id, 'job-functions', true);
