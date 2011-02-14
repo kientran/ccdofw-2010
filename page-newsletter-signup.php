@@ -16,7 +16,7 @@ Template Name: Newsletter Signup Form
 				<!--
 				function resizeIframe(newHeight)
 				{
-				  document.getElementById('iFrame').style.height = parseInt(newHeight) + 120 + 'px';
+				  document.getElementById('iFrame').style.height = parseInt(newHeight) + 140 + 'px';
 				}
 				// -->
 				</script>
