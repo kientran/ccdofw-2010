@@ -9,20 +9,17 @@ $(document).ready(function() {
 	                      // containing tabs for same reason.
 
 	$.fn.search = function() {
-    	return this.focus(function() {
-	      if( this.value == this.defaultValue ) {
-	        this.value = "";
-	        $(this).toggleClass('faded');
-	      }
-	    }).blur(function() {
-	      if( !this.value.length ) {
-	        this.value = this.defaultValue;
-	        $(this).toggleClass('faded');
-	      }
-	    });
-	  };
-
-  $("#searchfield").search();
+		return this.focus(function() {
+			if( this.value == this.defaultValue ) {
+				this.value = "";
+			}
+		}).blur(function() {
+			if( !this.value.length ) {
+				this.value = this.defaultValue;
+			}
+		});
+	};
+	$("#searchfield").search();
 
 	$('.calendarPopup').click(function (e) {
 		jQuery.modal('<iframe src="'+this.href+'" width="800" height="540"></iframe><p style="text-align:center; padding-bottom:20px; color:black;"><a target="_blank" href="'+this.href+'">View larger</a> - <a href="javascript:$.modal.close();">Close</a></p>', {   
