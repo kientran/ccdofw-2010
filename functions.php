@@ -9,9 +9,18 @@ if ( !is_admin() ) {
   wp_enqueue_script('hoverIntent', get_bloginfo('template_url') . '/js/hoverIntent.js',false, '1.0');
   wp_enqueue_script('superFish', get_bloginfo('template_url') . '/js/superfish.js', false, '1.0');
   wp_enqueue_script('supersubs', get_bloginfo('template_url') . '/js/supersubs.js', false, '1.0');
-  wp_enqueue_script('cycle', 'http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.72.js', false, '2.72');
-  wp_enqueue_script('slider', get_bloginfo('template_url') . '/js/slider.js', false, '1.0');
+
 }
+
+add_action('wp_print_styles','load_site_scripts');
+function load_site_scripts() {
+	global $post;
+	if ( is_front_page() || is_home() ) {
+	  wp_enqueue_script('cycle', 'http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.72.js', false, '2.72');
+	  wp_enqueue_script('slider', get_bloginfo('template_url') . '/js/slider.js', false, '1.0');
+	}
+}
+
 
 add_action( 'init', 'register_menus');
 
