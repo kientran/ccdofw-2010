@@ -78,8 +78,10 @@
     $id = $post->ID;
     $program = get_post_meta($id, 'job-program', true);
     $postingdate = get_the_date();
-    $expires = get_post_meta($id, 'job-expires', true);
-    $description = get_post_meta($id, 'job-description', true);
+	$expiredate = get_post_meta($id, 'expiration-date', true);
+	if(is_numeric($expiredate))
+	  $expires = date('F j, Y', $expiredate);
+	$description = get_post_meta($id, 'job-description', true);
     $functions = get_post_meta($id, 'job-functions', true);
     $qualifications = get_post_meta($id, 'job-qualifications', true);
     $hours = get_post_meta($id, 'job-hours', true);
