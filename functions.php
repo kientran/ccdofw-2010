@@ -61,6 +61,8 @@ function remove_unused_metaboxes() {
   remove_meta_box('commentsdiv', 'page', 'normal');
   remove_meta_box('authordiv', 'page', 'normal');
   remove_meta_box('revisionsdiv', 'page', 'normal');
+  remove_meta_box('postcustom', 'page', 'normal');
+  remove_meta_box('revisionsdiv', 'job-posting', 'normal');
   remove_meta_box('slugdiv', 'page', 'normal'); 
 }
 add_action('admin_head', 'remove_unused_metaboxes');
