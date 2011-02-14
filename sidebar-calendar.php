@@ -20,7 +20,7 @@
 <ul>
 	   <?php dynamic_sidebar( 'calendarsidebar' ); ?>
 </ul>
-	<p style='margin-top:2em; font-size:120%'><a class='calendarPopup' href="https://www.google.com/calendar/hosted/ccdofw.org/embed?height=560&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ccdofw.org_5iinepv8m6c6sdv2v1vsp6me04%40group.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FChicago">See our full calendar</a></p>
+	<p style='margin-top:2em; font-size:120%'><a class='calendarPopup' href="https://www.google.com/calendar/hosted/ccdofw.org/embed?height=540&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ccdofw.org_5iinepv8m6c6sdv2v1vsp6me04%40group.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FChicago">See our full calendar</a></p>
 <?php
         $args = array(
           'post_type' => 'attachment',
