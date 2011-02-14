@@ -28,7 +28,7 @@
 
 <header>
   <div id="searchbar">
-      <a href="<?php echo $blogurl ?>">Home</a> | <a href="">Contact</a> <form role='search' method='get' id='searchform' action='<?php echo $blogurl ?>'><input type="text" class="faded" id="searchfield s" name='s' value="Search"><input type='hidden' id='searchsubmit' value='Search' /></form>
+      <a href="<?php echo $blogurl ?>">Home</a> | <a href="mailto:infocatholiccharities@ccdofw.org">Contact</a> <form role='search' method='get' id='searchform' action='<?php echo $blogurl ?>'><input type="text" class="faded" id="searchfield s" name='s' value="Search"><input type='hidden' id='searchsubmit' value='Search' /></form>
   </div>
   <div id="logobar"><a href="<?php echo $blogurl ?>">Catholic Charities</a>
     <div id="creed">
