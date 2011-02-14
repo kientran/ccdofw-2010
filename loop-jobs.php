@@ -33,7 +33,9 @@ $id = $post->ID;
 $program = get_post_meta($id, 'job-program', true);
 $postingdate = get_the_date();
 $expiredate = get_post_meta($id, 'expiration-date', true);
-$expires = date('F j, Y', $expiredate);
+if(is_numeric($expiredate))
+  $expires = date('F j, Y', $expiredate);
+
 $summary = get_post_meta($id, 'job-summary', true);
 
 ?>
