@@ -17,7 +17,7 @@ if (is_front_page() ) {
     }
     $children=wp_list_pages( 'echo=0&depth=1&child_of=' . $page . '&title_li=' );
     if ($children) {
-      $output = wp_list_pages ('echo=0&depth=1&child_of=' . $page . '&title_li=<h2>' . get_the_title($post->post_parent) . '</h2>');
+      $output = wp_list_pages ('echo=0&depth=1&child_of=' . $page . '&title_li=<h2><a href="' . get_permalink($post->post_parent) . '">' . get_the_title($post->post_parent) . '</a></h2>');
     }
   }
   echo $output;
