@@ -20,7 +20,7 @@ Template Name: Newsletter Signup Form
 				}
 				// -->
 				</script>
-				<iframe id='iFrame' src='/wp-content/themes/ccdofw.org/newsletter-signup.php' width='100%'>
+				<iframe id='iFrame' src='/wordpress/wp-content/themes/ccdofw.org/newsletter-signup.php' width='100%'>
 				</iframe>
 			</div><!-- .entry-content -->	
 		</div>
