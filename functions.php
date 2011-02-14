@@ -1,5 +1,6 @@
 <?php
 
+remove_action('wp_head', 'wp_generator');
 
 if ( !is_admin() ) {
 
