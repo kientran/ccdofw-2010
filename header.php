@@ -21,6 +21,7 @@
 <!--[if lt IE 8]>
       <link href="<?php echo $templateurl ?>/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
+<title><?php bloginfo('name'); ?> <?php wp_title('--'); ?></title>
 </head>
 
 <body class="bp two-col">
