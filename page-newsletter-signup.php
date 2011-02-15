@@ -12,7 +12,7 @@ Template Name: Newsletter Signup Form
 			<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
 			<div class="entry-content">
-				<iframe id='iFrame' src='/wordpress/wp-content/themes/ccdofw.org/newsletter-signup.php' width='100%' height='800px'>
+				<iframe id='iFrame' src='/php/newsletter-signup.php' width='100%' height='800px'>
 				</iframe>
 			</div><!-- .entry-content -->	
 		</div>
